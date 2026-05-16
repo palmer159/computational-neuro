@@ -2,13 +2,12 @@
 
 ## Who this is for
 
-You are a post-graduate computer science major. You've trained neural networks, you can read a transformer paper, you've shipped ML systems. You know **zero neuroscience**. You want to understand the brain well enough to:
-
+You are someone who understands the basics of machine learning, deep learning, and AI. You know **zero neuroscience**. You want to understand the brain well enough to:
 - read neuro-inspired AI papers (predictive coding, world models, Hopfield nets, SNNs) without bluffing,
 - form your own view on what AGI/ASI is missing,
 - have informed conversations with computational neuroscientists.
 
-This guide is **not** a neuroscience textbook. It is a high-velocity bridge from CS into the parts of neuro that matter for AI research.
+This is **not** a neuroscience textbook. It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. This guide is a curated list of articles with links to relevant research papers without a paywall. 
 
 ## Reading paths
 
