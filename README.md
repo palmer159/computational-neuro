@@ -1,6 +1,11 @@
 # Neuroscience and AI - Understand basics of neuroscience concepts and relevance with AI
 
-A study guide for anyone with AI knowledge who wants to understand the key concepts of neuroscience along with its relevance with AI and AGI, and begin to understand the neuro × AI boundary. This is not a deep neuroscience textbook or an AI textbook. Its simply to understand the relevance of the field of neuroscience with AI, and it assumes no prior knowledge of neuroscience. 
+A study guide for anyone with AI knowledge who wants to understand the key concepts of neuroscience along with its relevance with AI, and begin to understand the neuro × AI boundary. This is not a deep neuroscience textbook or an AI textbook. Its simply to understand the relevance of the field of neuroscience with AI, and it assumes no prior knowledge of neuroscience. 
+
+## Why understand the brain for AI?
+The brain is the only existence proof of general intelligence we have. It runs on a mere ~20 watts whereas AI needs several Megawatts of power! It learns from a handful of examples, generalizes out of distribution, and stays coherent for ~80 years. Modern LLMs match or exceed it on narrow tasks while burning megawatts and hallucinating their own training data. Whatever the brain is doing, we have not reproduced it, even if we have surpassed it in places.
+
+That is the case for caring about neuroscience. The case for not over-caring is that we may build AGI without ever resolving how cortex works. Take from neuroscience what is computationally clarifying; don't be religious about biological plausibility.
 
 ## Why this study guide
 Neuroscience has made fundamental contributions to advancing AI research. The past contributions of neuroscience to AI have rarely involved a simple transfer of full-fledged solutions that could be directly re-implemented in machines. Rather, neuroscience has typically been useful in a subtler way, stimulating algorithmic-level questions about facets of human learning and intelligence of interest to AI researchers and providing initial leads toward relevant mechanisms. 
