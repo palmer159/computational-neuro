@@ -1,6 +1,6 @@
 # Neuroscience & Computational Neuroscience for AI Researchers
 
-A study guide for someone with CS knowledge with no prior neuroscience background, written for someone who wants to understand the brain well enough to read NeuroAI papers, form an informed view on the parallels or differences of neuroscience concepts with with AI and AGI, and begin to understand the neuro × AI boundary.
+A study guide for anyone with CS and AI knowledge who wants to understand the brain well enough to read NeuroAI papers, form an informed view on the parallels or differences of neuroscience concepts with with AI and AGI, and begin to understand the neuro × AI boundary.
 Everything here is summarized from authoritative open articles and reputed research papers, with links to the papers for detailed study.
 
 You can browse the entire guide right here on git, or choose to run a local web server using the instructions below. 
