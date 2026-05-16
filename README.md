@@ -1,9 +1,9 @@
-# Neuroscience and AI - A study guide to understand basics of neuroscience and relevance with AI
+# Neuroscience and AI - Understand basics of neuroscience concepts and relevance with AI
 
-A study guide for anyone with AI knowledge who wants to understand the brain well enough to understand the parallels or relevance of neuroscience concepts with with AI and AGI, and begin to understand the neuro × AI boundary.
+A study guide for anyone with AI knowledge who wants to understand the brain to understand the relevance of neuroscience concepts with AI and AGI, and begin to understand the neuro × AI boundary. This is not a deep neuroscience textbook or an AI textbook. Its simply to understand the relevance of the field of neuroscience with AI, and it assumes no prior knowledge of neuroscience. 
 
 ## Why this study guide
-Every chapter here is a summary of key neuroscience concepts, with a description of its relevance or divergence with AI concepts
+Every chapter here is a summary of key neuroscience concepts for a beginner, with a description of its relevance or divergence with AI concepts
 Everything here is summarized from authoritative open articles and reputed research papers, with links to the papers for detailed study.
 
 ## Who this is for
