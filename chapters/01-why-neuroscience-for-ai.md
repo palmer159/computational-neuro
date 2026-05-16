@@ -58,6 +58,6 @@ flowchart LR
 Hold two things at once:
 
 - The brain is the only existence proof.
-- The brain is not the only valid solution. Don't fetishize.
+- The brain is not the only valid solution. Don't over index on the brain.
 
 The most productive AI researchers in this space (DeepMind, Numenta, MIT BCS, Stanford, the Mila / Bengio crowd) treat neuroscience as a **source of inductive biases and existence proofs**, not as a target to reverse-engineer. That's the posture this guide will keep.
