@@ -3,11 +3,13 @@
 ## Who this is for
 
 You are someone who understands the basics of machine learning, deep learning, and AI. You know **zero neuroscience**. You want to understand the brain well enough to:
-- read neuro-inspired AI papers (predictive coding, world models, Hopfield nets, SNNs) without bluffing,
-- form your own view on what AGI/ASI is missing,
-- have informed conversations with computational neuroscientists.
+- understand relevance of neuroscience for AI
+- understand neuro-inspired AI papers
+- form your own view on what AGI/ASI is missing
 
 This is **not** a neuroscience textbook. It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. This guide is a curated list of articles with links to relevant research papers without a paywall. 
+
+Note that the most productive AI researchers in this space (DeepMind, Numenta, MIT BCS, Stanford, the Mila / Bengio crowd) treat neuroscience as a **source of inductive biases and existence proofs**, not as a target to reverse-engineer. 
 
 ## Reading paths
 
