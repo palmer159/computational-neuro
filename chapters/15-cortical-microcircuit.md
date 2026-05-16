@@ -1,0 +1,71 @@
+# The cortical microcircuit & canonical computation
+
+## The bet that drives modern NeuroAI
+
+Cortex is a **6-layer cake** that looks roughly the same everywhere — V1, M1, PFC, A1. The bet: there is one **canonical algorithm** instantiated by this microcircuit, and learning it is the central problem.
+
+This is the cortical analog of the bitter lesson: don't model V1 differently from M1 differently from IT. Model the canonical circuit; let task and input shape the rest.
+
+📄 [Mountcastle, 1997 — The columnar organization of the neocortex](https://en.wikipedia.org/wiki/Cortical_column).
+📄 [Douglas & Martin, 2004 — Neuronal circuits of the neocortex](https://en.wikipedia.org/wiki/Cortical_column). Best summary of the canonical-microcircuit hypothesis.
+
+## The wiring (rough)
+
+```mermaid
+flowchart TD
+    Th[Thalamus] -->|driver| L4[L4: input]
+    L4 --> L2_3[L2/3: cortico-cortical]
+    L2_3 --> L5[L5: output to subcortex]
+    L5 --> L6[L6: feedback to thalamus]
+    L6 --> L4
+    L2_3 --> L5
+    HigherCtx[Higher cortical areas] -->|feedback| L1[L1: top-down]
+    L1 --> L2_3
+    Inh[PV / SOM / VIP interneurons] -.gating.-> L2_3
+    Inh -.gating.-> L5
+```
+
+Repeated across **square millimeters** of cortex with local variations. The columnar idea: a vertical "column" through these layers is a computational unit. Empirically, columns are softer than originally claimed but the rough vertical organization holds.
+
+## What the canonical circuit might be doing
+
+Several leading hypotheses, mostly compatible:
+
+1. **Predictive coding.** L2/3 carries predictions, L4/L5 errors. [Bastos et al., 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3526980/) — a full canonical-microcircuit proposal for predictive coding.
+2. **Hierarchical Bayesian inference.** Each column infers the local posterior; feedback carries the prior. [Lee & Mumford, 2003](https://en.wikipedia.org/wiki/Hierarchical_temporal_memory).
+3. **Sparse distributed coding** with competitive lateral inhibition. [Olshausen-style models](https://www.rctn.org/bruno/papers/sparse-coding.pdf).
+4. **Cortical "Hebbian assemblies"** — Hebb's cell assemblies as the unit. Related to Hopfield-style attractors. [Buzsáki, 2010](https://en.wikipedia.org/wiki/Cell_assembly).
+
+## Numenta and the Thousand Brains theory
+
+Jeff Hawkins' lab argues each cortical column is itself a **complete model of the world** that votes with other columns. Provocative; under-validated; probably wrong in detail; useful as a thought experiment.
+
+📄 [Hawkins, Lewis, Klukas, Purdy & Ahmad, 2019 — A framework for intelligence and cortical function based on grid cells in the neocortex](https://www.frontiersin.org/articles/10.3389/fncir.2018.00121/full). Read once. Don't bet your career on it.
+
+**🤖 AI-relevance.** The Numenta framing — "many small models that vote, share representations via reference frames, encode object structure relationally" — has clear analogies in mixture-of-experts LLMs and capsule networks. Whether the analogy is causal is unclear.
+
+## Interneurons: the gating cast
+
+Three big inhibitory subtypes, each with a structural role:
+
+| Cell | Targets | Role |
+|---|---|---|
+| **PV+ basket cells** | Pyramidal somas | Fast, blanket inhibition; gain control; gamma rhythm generation |
+| **SOM+ Martinotti cells** | Pyramidal dendrites | Local, dendrite-targeting; gates feedback |
+| **VIP+** | SOM and other inhibitory cells | **Disinhibitory** — gates SOM off, opens dendrites to top-down |
+
+The PV–SOM–VIP triad is the canonical "context-dependent computation" circuit. Top-down and neuromodulatory inputs typically arrive on VIP cells, which release SOM, which opens dendritic inputs. Effective gating without explicit multiplications.
+
+📄 [Karnani, Agetsuma & Yuste, 2014](https://en.wikipedia.org/wiki/Disinhibition) — review of the disinhibitory motif.
+
+**🤖 AI-relevance.** Gating is everywhere in modern AI — LSTMs, GRUs, gated MLPs, mixture-of-experts. The cortical version is multiplicative gating built from a network of inhibitory subtypes. Ideas like [Mixture-of-Experts routing](https://arxiv.org/abs/1701.06538) are loose biological cousins.
+
+## Cortical hierarchies and the Felleman-Van Essen diagram
+
+📄 [Felleman & Van Essen, 1991 — Distributed hierarchical processing in the primate cerebral cortex](https://en.wikipedia.org/wiki/Visual_cortex). The famous spaghetti diagram of macaque visual cortex with ~30 areas in a partial hierarchy. Sets the data many cortical models try to match.
+
+## Sources
+
+- Kandel ch 17, ch 56.
+- [Harris & Shepherd, 2015 — The neocortical circuit: themes and variations](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4419492/).
+- [Bastos et al., 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3526980/) (cited above) for the predictive-coding-microcircuit synthesis.

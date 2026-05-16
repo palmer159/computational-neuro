@@ -1,0 +1,63 @@
+{
+  "title": "Neuroscience & Computational Neuroscience for AI Researchers",
+  "subtitle": "A study guide for CS post-grads building toward AGI",
+  "audience": "Post-graduate computer science major with no prior neuroscience background, working in or moving toward AI/AGI research at a tech company.",
+  "version": "1.0",
+  "updated": "2026-05-15",
+  "parts": [
+    {
+      "name": "Part I — Orientation",
+      "chapters": [
+        { "id": "00-how-to-use", "title": "How to use this guide", "minutes": 8 },
+        { "id": "01-why-neuroscience-for-ai", "title": "Why neuroscience matters for AI/AGI", "minutes": 25 }
+      ]
+    },
+    {
+      "name": "Part II — Foundations of Neuroscience",
+      "chapters": [
+        { "id": "02-neuron-biophysics", "title": "The neuron: biophysics & spikes", "minutes": 45 },
+        { "id": "03-synapses-plasticity", "title": "Synapses, learning rules & plasticity", "minutes": 45 },
+        { "id": "04-neuroanatomy", "title": "Neuroanatomy: the systems-level map", "minutes": 40 },
+        { "id": "05-sensory-systems", "title": "Sensory systems: vision, audition, touch", "minutes": 40 },
+        { "id": "06-motor-action", "title": "Motor systems & action selection", "minutes": 30 },
+        { "id": "07-memory-hippocampus", "title": "Memory & the hippocampus", "minutes": 40 },
+        { "id": "08-attention-pfc", "title": "Attention, executive control & prefrontal cortex", "minutes": 35 },
+        { "id": "09-reward-dopamine", "title": "Reward, dopamine & reinforcement learning", "minutes": 40 },
+        { "id": "10-consciousness", "title": "Consciousness: GWT, IIT, HOT", "minutes": 35 }
+      ]
+    },
+    {
+      "name": "Part III — Computational Neuroscience",
+      "chapters": [
+        { "id": "11-rate-vs-spiking", "title": "Rate models vs spiking models", "minutes": 30 },
+        { "id": "12-neural-coding", "title": "Neural coding: rate, temporal, population", "minutes": 35 },
+        { "id": "13-bayesian-brain", "title": "The Bayesian brain & predictive coding", "minutes": 40 },
+        { "id": "14-free-energy", "title": "Free Energy Principle & active inference", "minutes": 40 },
+        { "id": "15-cortical-microcircuit", "title": "The cortical microcircuit & canonical computation", "minutes": 35 },
+        { "id": "16-hippocampal-models", "title": "Hippocampal computation: place cells, replay, successor representations", "minutes": 40 },
+        { "id": "17-dynamics", "title": "Neural dynamics: attractors, oscillations, criticality", "minutes": 35 }
+      ]
+    },
+    {
+      "name": "Part IV — Neuro × AI",
+      "chapters": [
+        { "id": "18-deep-learning-cortex", "title": "Deep learning ↔ cortex: convergent representations", "minutes": 40 },
+        { "id": "19-backprop-in-brain", "title": "Backprop in the brain? Biologically plausible learning", "minutes": 35 },
+        { "id": "20-rl-and-brain", "title": "Reinforcement learning & the basal ganglia", "minutes": 35 },
+        { "id": "21-world-models", "title": "World models, planning & model-based cognition", "minutes": 35 },
+        { "id": "22-transformers-brain", "title": "Transformers, attention & the brain", "minutes": 35 },
+        { "id": "23-llms-cognition", "title": "LLMs, language & the cognitive sciences", "minutes": 40 },
+        { "id": "24-neuro-inspired-arch", "title": "Neuro-inspired architectures: SNNs, neuromorphic, Hopfield, predictive nets", "minutes": 35 },
+        { "id": "25-agi-asi", "title": "Roads to AGI / ASI: what neuroscience suggests is missing", "minutes": 40 }
+      ]
+    },
+    {
+      "name": "Part V — Practitioner toolkit",
+      "chapters": [
+        { "id": "26-tools-datasets", "title": "Tools, datasets & courses", "minutes": 25 },
+        { "id": "27-reading-list", "title": "Curated reading list & papers (annotated)", "minutes": 30 },
+        { "id": "28-glossary", "title": "Glossary", "minutes": 15 }
+      ]
+    }
+  ]
+}

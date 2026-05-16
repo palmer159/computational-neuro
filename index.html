@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neuroscience &amp; Computational Neuroscience for AI Researchers</title>
+<style>
+:root {
+  --bg: #fbfaf7;
+  --fg: #1c1c1c;
+  --muted: #5a5a5a;
+  --accent: #1f4dd6;
+  --accent-bg: #eef2ff;
+  --border: #e1ddd4;
+  --code-bg: #f3f1ec;
+  --sidebar-bg: #f5f3ee;
+  --hover: #e8e3d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15161a;
+    --fg: #e8e6e0;
+    --muted: #9a9890;
+    --accent: #8aa9ff;
+    --accent-bg: #1d2238;
+    --border: #2a2c33;
+    --code-bg: #1c1d22;
+    --sidebar-bg: #18191e;
+    --hover: #23252c;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", Cambria, serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+#sidebar {
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  height: 100vh;
+  padding: 24px 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+}
+#sidebar h1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: var(--fg);
+}
+#sidebar .subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+#sidebar .part {
+  margin-top: 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 8px 4px 8px;
+}
+#sidebar a {
+  display: block;
+  color: var(--fg);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 1px 0;
+  line-height: 1.35;
+}
+#sidebar a:hover { background: var(--hover); }
+#sidebar a.active { background: var(--accent-bg); color: var(--accent); font-weight: 600; }
+#sidebar a .min { color: var(--muted); font-size: 11px; margin-left: 6px; }
+
+#content {
+  overflow-y: auto;
+  height: 100vh;
+  padding: 56px 64px 120px 64px;
+}
+#content article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+#content h1 { font-size: 32px; line-height: 1.2; margin: 0 0 16px 0; }
+#content h2 { font-size: 22px; margin-top: 36px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+#content h3 { font-size: 18px; margin-top: 28px; }
+#content p { margin: 14px 0; }
+#content a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+#content a:hover { border-bottom-color: var(--accent); }
+#content code {
+  background: var(--code-bg);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+#content pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.45;
+}
+#content pre code { background: none; padding: 0; }
+#content blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 16px 0;
+  padding: 6px 16px;
+  color: var(--muted);
+  background: var(--accent-bg);
+  border-radius: 0 4px 4px 0;
+}
+#content table {
+  border-collapse: collapse;
+  margin: 16px 0;
+  width: 100%;
+  font-size: 15px;
+}
+#content th, #content td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+#content th { background: var(--code-bg); font-weight: 600; }
+#content hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+.mermaid { text-align: center; margin: 20px 0; }
+
+#topbar {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 5;
+  padding: 0 0 16px 0;
+  margin: 0 0 16px 0;
+  border-bottom: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+}
+#topbar .breadcrumb { font-weight: 500; }
+#topbar .nav-buttons a {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-left: 4px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--fg);
+}
+#topbar .nav-buttons a:hover { background: var(--hover); }
+
+#search {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  body { grid-template-columns: 1fr; }
+  #sidebar { height: auto; max-height: 40vh; border-right: none; border-bottom: 1px solid var(--border); }
+  #content { padding: 24px 18px 80px 18px; height: auto; }
+}
+</style>
+</head>
+<body>
+<nav id="sidebar">
+  <h1>Neuro × AI</h1>
+  <div class="subtitle">A study guide for CS post-grads</div>
+  <input id="search" type="text" placeholder="Filter chapters…" autocomplete="off">
+  <div id="toc"></div>
+</nav>
+<main id="content">
+  <article>
+    <div id="topbar">
+      <div class="breadcrumb" id="breadcrumb">Loading…</div>
+      <div class="nav-buttons">
+        <a href="#" id="prev-link">‹ Prev</a>
+        <a href="#" id="next-link">Next ›</a>
+      </div>
+    </div>
+    <div id="markdown"></div>
+  </article>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script>
+let manifest = null;
+let flatChapters = [];
+
+const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default', securityLevel: 'loose' });
+
+marked.setOptions({ gfm: true, breaks: false });
+
+async function loadManifest() {
+  const r = await fetch('manifest.json');
+  manifest = await r.json();
+  flatChapters = [];
+  for (const part of manifest.parts) for (const ch of part.chapters) flatChapters.push({ ...ch, part: part.name });
+  renderToc();
+}
+
+function renderToc(filter = '') {
+  const toc = document.getElementById('toc');
+  toc.innerHTML = '';
+  const f = filter.trim().toLowerCase();
+  for (const part of manifest.parts) {
+    const matches = part.chapters.filter(c => !f || c.title.toLowerCase().includes(f) || c.id.includes(f));
+    if (matches.length === 0) continue;
+    const h = document.createElement('div');
+    h.className = 'part';
+    h.textContent = part.name;
+    toc.appendChild(h);
+    for (const ch of matches) {
+      const a = document.createElement('a');
+      a.href = '#' + ch.id;
+      a.dataset.id = ch.id;
+      a.innerHTML = `${ch.title}<span class="min">${ch.minutes}m</span>`;
+      a.addEventListener('click', (e) => { e.preventDefault(); navigate(ch.id); });
+      toc.appendChild(a);
+    }
+  }
+}
+
+function setActive(id) {
+  document.querySelectorAll('#toc a').forEach(a => a.classList.toggle('active', a.dataset.id === id));
+}
+
+async function loadChapter(id) {
+  const r = await fetch('chapters/' + id + '.md');
+  if (!r.ok) {
+    document.getElementById('markdown').innerHTML = '<p style="color:#c33">Could not load chapter <code>' + id + '</code>.</p>';
+    return;
+  }
+  const md = await r.text();
+
+  // Pull mermaid blocks out before marked parses them, render them ourselves.
+  const mermaidBlocks = [];
+  const stripped = md.replace(/```mermaid\n([\s\S]*?)```/g, (_, code) => {
+    const idx = mermaidBlocks.length;
+    mermaidBlocks.push(code);
+    return `<div class="mermaid-placeholder" data-idx="${idx}"></div>`;
+  });
+
+  const html = DOMPurify.sanitize(marked.parse(stripped), { ADD_ATTR: ['target'] });
+  const md_el = document.getElementById('markdown');
+  md_el.innerHTML = html;
+
+  // External links → new tab.
+  md_el.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+
+  // Render mermaid placeholders.
+  const placeholders = md_el.querySelectorAll('.mermaid-placeholder');
+  for (const ph of placeholders) {
+    const code = mermaidBlocks[+ph.dataset.idx];
+    try {
+      const { svg } = await mermaid.render('m' + Math.random().toString(36).slice(2), code);
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.innerHTML = svg;
+      ph.replaceWith(div);
+    } catch (err) {
+      const pre = document.createElement('pre');
+      pre.textContent = '/* mermaid render failed */\n' + code;
+      ph.replaceWith(pre);
+    }
+  }
+
+  // Crumb + prev/next.
+  const idx = flatChapters.findIndex(c => c.id === id);
+  const ch = flatChapters[idx];
+  document.getElementById('breadcrumb').textContent = ch ? `${ch.part}  ›  ${ch.title}` : '';
+  const prev = idx > 0 ? flatChapters[idx - 1] : null;
+  const next = idx < flatChapters.length - 1 ? flatChapters[idx + 1] : null;
+  const pl = document.getElementById('prev-link');
+  const nl = document.getElementById('next-link');
+  pl.style.visibility = prev ? 'visible' : 'hidden';
+  nl.style.visibility = next ? 'visible' : 'hidden';
+  if (prev) pl.onclick = (e) => { e.preventDefault(); navigate(prev.id); };
+  if (next) nl.onclick = (e) => { e.preventDefault(); navigate(next.id); };
+
+  setActive(id);
+  document.getElementById('content').scrollTop = 0;
+}
+
+function navigate(id) {
+  history.replaceState(null, '', '#' + id);
+  loadChapter(id);
+}
+
+document.getElementById('search').addEventListener('input', (e) => renderToc(e.target.value));
+
+window.addEventListener('hashchange', () => {
+  const id = location.hash.replace('#', '') || flatChapters[0]?.id;
+  if (id) loadChapter(id);
+});
+
+(async () => {
+  await loadManifest();
+  const id = location.hash.replace('#', '') || flatChapters[0].id;
+  loadChapter(id);
+})();
+</script>
+</body>
+</html>
