@@ -7,6 +7,8 @@ The brain is the only existence proof of general intelligence we have. It runs o
 
 That is the case for caring about neuroscience. The case for not over-caring is that we may build AGI without ever resolving how cortex works. Take from neuroscience what is computationally clarifying; don't be religious about biological plausibility.
 
+The most productive AI researchers in this space (DeepMind, Numenta, MIT BCS, Stanford, the Mila / Bengio crowd) treat neuroscience as a **source of inductive biases and existence proofs**, not as a target to reverse-engineer. 
+
 ## Why this study guide
 Neuroscience has made fundamental contributions to advancing AI research. The past contributions of neuroscience to AI have rarely involved a simple transfer of full-fledged solutions that could be directly re-implemented in machines. Rather, neuroscience has typically been useful in a subtler way, stimulating algorithmic-level questions about facets of human learning and intelligence of interest to AI researchers and providing initial leads toward relevant mechanisms. 
 
