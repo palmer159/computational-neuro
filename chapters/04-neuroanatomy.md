@@ -1,6 +1,6 @@
 # Neuroanatomy: the systems-level map
 
-You don't need anatomy to the level a med student does. You need the **functional block diagram** of the brain so that when a paper says "lesion to ventromedial PFC" or "hippocampal CA1 to entorhinal cortex" you can place it.
+You don't need anatomy to the level a med student does. You need the **functional block diagram** of the brain so that when a paper says "lesion to ventromedial [PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex)" or "hippocampal [CA1](https://en.wikipedia.org/wiki/Hippocampus_anatomy) to entorhinal cortex" you can place it.
 
 ## The 60-second tour
 
@@ -40,7 +40,7 @@ The cerebral cortex is a 2–4 mm thick sheet of ~16 billion neurons arranged in
 
 This stereotyped 6-layer microcircuit appears (with variations) across all neocortex. The hypothesis that **cortex runs one canonical algorithm everywhere** drives most neuro-AI work (Ch 15).
 
-📄 [Mountcastle, 1997 — The columnar organization of the neocortex](https://en.wikipedia.org/wiki/Cortical_column) — the founding paper of canonical-cortex theory.
+📄 [Mountcastle, 1997 — The columnar organization of the neocortex](https://doi.org/10.1093/brain/120.4.701) — the founding paper of canonical-cortex theory.
 
 ## The subcortical players you must know
 
@@ -66,7 +66,7 @@ Five small nuclei in the brainstem and basal forebrain project broadly to the re
 | Cholinergic | NBM, brainstem | Acetylcholine | Attention, signal-to-noise, plasticity gate |
 | Histaminergic | Tuberomammillary | Histamine | Wakefulness |
 
-**🤖 AI-relevance.** Read [Doya, 2002 — Metalearning and neuromodulation](https://en.wikipedia.org/wiki/Neuromodulation). Maps the four big neuromodulators to RL meta-parameters: dopamine ≈ TD error, serotonin ≈ discount γ, noradrenaline ≈ inverse temperature β, acetylcholine ≈ learning rate α. This is one of the cleanest neuro→AI mappings in the field.
+**🤖 AI-relevance.** Read [Doya, 2002 — Metalearning and neuromodulation](https://doi.org/10.1016/S0893-6080(02)00044-8). Maps the four big neuromodulators to RL meta-parameters: dopamine ≈ TD error, serotonin ≈ discount γ, noradrenaline ≈ inverse temperature β, acetylcholine ≈ learning rate α. This is one of the cleanest neuro→AI mappings in the field.
 
 ## The two big learning systems hypothesis
 
@@ -79,7 +79,7 @@ flowchart LR
     NC --> Behavior
 ```
 
-📄 [McClelland, McNaughton & O'Reilly, 1995 — Why there are complementary learning systems](https://en.wikipedia.org/wiki/Catastrophic_interference) — the **CLS** (Complementary Learning Systems) framework. Direct ancestor of replay-buffer ideas in deep RL.
+📄 [McClelland, McNaughton & O'Reilly, 1995 — Why there are complementary learning systems](https://en.wikipedia.org/wiki/Catastrophic_interference) — the **[CLS](https://en.wikipedia.org/wiki/Catastrophic_interference)** (Complementary Learning Systems) framework. Direct ancestor of replay-buffer ideas in deep [RL](https://en.wikipedia.org/wiki/Reinforcement_learning).
 
 ## Connectomes: the wiring diagram
 

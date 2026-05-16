@@ -17,7 +17,7 @@ Different systems, different substrates, different rules. Damaging hippocampus k
 
 ## Working memory: held in mind, briefly
 
-Persistent activity in **dorsolateral PFC** maintains items over seconds during a delay task. Capacity ~4 items in humans. [Goldman-Rakic, 1995](https://en.wikipedia.org/wiki/Patricia_Goldman-Rakic) is foundational; [Constantinidis et al., 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020047/) is the modern review.
+Persistent activity in **dorsolateral PFC** maintains items over seconds during a delay task. Capacity ~4 items in humans. [Goldman-Rakic, 1995](https://doi.org/10.1016/0896-6273(95)90304-6) is foundational; [Constantinidis et al., 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020047/) is the modern review.
 
 **🤖 AI-relevance.** Transformer context windows are working-memory analogs; both are bottlenecked. Persistent attractor states in PFC offer one model of "register" memory that survives interference.
 
@@ -45,24 +45,24 @@ sequenceDiagram
 
 ### Sharp-wave ripples and replay
 
-During quiet wake and NREM sleep, hippocampal CA1 emits high-frequency (150–250 Hz) "sharp-wave ripples" during which sequences of place cells **replay** prior trajectories at 10–20× real time. This is the proposed substrate of consolidation and offline planning.
+During quiet wake and [NREM](https://en.wikipedia.org/wiki/Non-rapid_eye_movement_sleep) sleep, hippocampal [CA1](https://en.wikipedia.org/wiki/Hippocampus_anatomy) emits high-frequency (150–250 Hz) "sharp-wave ripples" during which sequences of place cells **replay** prior trajectories at 10–20× real time. This is the proposed substrate of consolidation and offline planning.
 
-📄 [Foster & Wilson, 2006 — Reverse replay of behavioral sequences in hippocampal place cells during the awake state](https://en.wikipedia.org/wiki/Hippocampal_replay) — the awake-replay paper.
-📄 [Buzsáki, 2015 — Hippocampal sharp wave-ripple: a cognitive biomarker for episodic memory and planning](https://en.wikipedia.org/wiki/Sharp_waves_and_ripples).
+📄 [Foster & Wilson, 2006 — Reverse replay of behavioral sequences in hippocampal place cells during the awake state](https://doi.org/10.1038/nature04587) — the awake-replay paper.
+📄 [Buzsáki, 2015 — Hippocampal sharp wave-ripple: a cognitive biomarker for episodic memory and planning](https://doi.org/10.1002/hipo.22488).
 
-**🤖 AI-relevance.** This is where DeepMind's [DQN paper (Mnih et al., 2015)](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) directly cites neuroscience — experience replay was inspired by hippocampal replay. The DQN authors include Demis Hassabis, a hippocampus researcher by training.
+**🤖 AI-relevance.** This is where DeepMind's [DQN paper (Mnih et al., 2015)](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) directly cites neuroscience — experience replay was inspired by hippocampal replay. The [DQN](https://en.wikipedia.org/wiki/Q-learning) authors include Demis Hassabis, a hippocampus researcher by training.
 
 ## Place cells, grid cells, and the cognitive map
 
-📄 [O'Keefe & Dostrovsky, 1971 — The hippocampus as a spatial map](https://en.wikipedia.org/wiki/Place_cell). Place cells in CA1 fire when the animal is in a specific location.
-📄 [Hafting et al., 2005 — Microstructure of a spatial map in the entorhinal cortex](https://en.wikipedia.org/wiki/Grid_cell). Grid cells fire on a hexagonal lattice covering the environment. Nobel Prize 2014 (O'Keefe, Mosers).
+📄 [O'Keefe & Dostrovsky, 1971 — The hippocampus as a spatial map](https://doi.org/10.1016/0006-8993(71)90358-1). Place cells in CA1 fire when the animal is in a specific location.
+📄 [Hafting et al., 2005 — Microstructure of a spatial map in the entorhinal cortex](https://doi.org/10.1038/nature03721). Grid cells fire on a hexagonal lattice covering the environment. Nobel Prize 2014 (O'Keefe, Mosers).
 
 Modern view: the hippocampal-entorhinal system is a **general-purpose relational memory and inference engine**, not just a GPS. It encodes spatial **and** non-spatial relational structure.
 
-📄 [Behrens et al., 2018 — What is a cognitive map?](https://en.wikipedia.org/wiki/Cognitive_map) — the modern reframing.
-📄 [Whittington et al., 2020 — The Tolman-Eichenbaum Machine (TEM)](https://en.wikipedia.org/wiki/Hippocampus#Models_of_hippocampal_function) — relates hippocampus to a generative model with structural priors.
+📄 [Behrens et al., 2018 — What is a cognitive map?](https://doi.org/10.1016/j.neuron.2018.10.002) — the modern reframing.
+📄 [Whittington et al., 2020 — The Tolman-Eichenbaum Machine (TEM)](https://doi.org/10.1016/j.cell.2020.10.024) — relates hippocampus to a generative model with structural priors.
 
-**🤖 AI-relevance.** Grid cells are surprisingly close to **principal components of place fields** ([Stachenfeld, Botvinick & Gershman, 2017 — Hippocampus as a predictive map](https://en.wikipedia.org/wiki/Hippocampus)). Successor representations bridge to RL (Ch 16, Ch 20). [Banino et al., 2018, Nature](https://en.wikipedia.org/wiki/Grid_cell) — agents trained on path integration spontaneously develop grid-like units.
+**🤖 AI-relevance.** Grid cells are surprisingly close to **principal components of place fields** ([Stachenfeld, Botvinick & Gershman, 2017 — Hippocampus as a predictive map](https://doi.org/10.1038/nn.4650)). Successor representations bridge to [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) (Ch 16, Ch 20). [Banino et al., 2018, Nature](https://doi.org/10.1038/s41586-018-0102-6) — agents trained on path integration spontaneously develop grid-like units.
 
 ## Sleep and consolidation
 

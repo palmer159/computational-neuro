@@ -8,7 +8,7 @@ A neuron's state is a single real number $r(t) \in [0, r_{max}]$ representing in
 
 $$\tau \frac{dr_i}{dt} = -r_i + f\left(\sum_j w_{ij} r_j + I_i\right)$$
 
-This is a **continuous-time RNN**. Set $\tau \to 0$ and you get a feedforward network with sigmoid/ReLU. **Every standard deep learning model is a rate model.**
+This is a **continuous-time [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network)**. Set $\tau \to 0$ and you get a feedforward network with sigmoid/[ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)). **Every standard deep learning model is a rate model.**
 
 When to use:
 - You care about input-output mappings, not timing.
@@ -43,18 +43,18 @@ When to use:
 
 When a thousand neurons are recorded simultaneously, the population trajectory often lives on a low-dimensional manifold. Rate models in continuous-time recurrent form recover this beautifully.
 
-📄 [Vyas, Golub, Sussillo & Shenoy, 2020 — Computation through neural population dynamics](https://en.wikipedia.org/wiki/Neural_coding). The modern paradigm: train an RNN to do the task, look at its hidden dynamics, compare to neural data. Often matches strikingly well.
+📄 [Vyas, Golub, Sussillo & Shenoy, 2020 — Computation through neural population dynamics](https://doi.org/10.1146/annurev-neuro-092619-094115). The modern paradigm: train an RNN to do the task, look at its hidden dynamics, compare to neural data. Often matches strikingly well.
 
-**🤖 AI-relevance.** This is one of the most active fronts in NeuroAI. Trained RNN dynamics are being used as **explanatory models** of motor cortex, PFC, and even cognition. See [Sussillo & Barak, 2013](https://en.wikipedia.org/wiki/Recurrent_neural_network) and [Mante et al., 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3923572/).
+**🤖 AI-relevance.** This is one of the most active fronts in NeuroAI. Trained RNN dynamics are being used as **explanatory models** of motor cortex, [PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex), and even cognition. See [Sussillo & Barak, 2013](https://doi.org/10.1162/NECO_a_00409) and [Mante et al., 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3923572/).
 
 ## A pragmatic table
 
 | You want to... | Use |
 |---|---|
 | Match cognitive-task behavior | Rate RNN |
-| Match millisecond ephys spike data | Spiking (LIF or GLM) |
+| Match millisecond ephys spike data | Spiking ([LIF](https://en.wikipedia.org/wiki/Biological_neuron_model) or [GLM](https://en.wikipedia.org/wiki/Generalized_linear_model)) |
 | Run on neuromorphic hardware | Spiking |
-| Train with backprop, large scale | Rate (or surrogate-gradient SNN) |
+| Train with backprop, large scale | Rate (or surrogate-gradient [SNN](https://en.wikipedia.org/wiki/Spiking_neural_network)) |
 | Test biologically-plausible learning rules | Spiking |
 | Probe representations / decoding | Either; rate is easier |
 

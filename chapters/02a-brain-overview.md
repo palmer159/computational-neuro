@@ -24,11 +24,11 @@ Numbers worth memorizing:
 | Conduction speed | 0.5 – 120 m/s along axons |
 | Spike rate | ~0.1 – 100 Hz typical; ~200 Hz absolute ceiling |
 
-A useful mental model: the brain is a **massively parallel, recurrent, self-modifying, biochemically powered analog computer** that is interfaced to a body and embedded in a world. Every word in that sentence matters, and most differ from how a GPU runs an LLM.
+A useful mental model: the brain is a **massively parallel, recurrent, self-modifying, biochemically powered analog computer** that is interfaced to a body and embedded in a world. Every word in that sentence matters, and most differ from how a GPU runs an [LLM](https://en.wikipedia.org/wiki/Large_language_model).
 
 📄 [Herculano-Houzel, 2009 — The human brain in numbers: a linearly scaled-up primate brain](https://www.frontiersin.org/articles/10.3389/neuro.09.031.2009/full). Authoritative source for the 86-billion-neuron figure (revising the long-cited 100B).
 
-📄 [Sterling & Laughlin — Principles of Neural Design (2015)](https://en.wikipedia.org/wiki/Peter_Sterling_(neuroscientist)). Best argument that **energy efficiency is the dominant constraint** shaping brain architecture — a constraint AI accelerators do not face the same way.
+📄 [Sterling & Laughlin — Principles of Neural Design (2015)](https://direct.mit.edu/books/oa-monograph/4128/Principles-of-Neural-Design). Best argument that **energy efficiency is the dominant constraint** shaping brain architecture — a constraint AI accelerators do not face the same way.
 
 ### The hierarchical layout (preview of Ch 04)
 

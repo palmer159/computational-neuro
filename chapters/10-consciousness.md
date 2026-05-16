@@ -1,4 +1,4 @@
-# Consciousness: GWT, IIT, HOT
+# Consciousness: [GWT](https://en.wikipedia.org/wiki/Global_workspace_theory), [IIT](https://en.wikipedia.org/wiki/Integrated_information_theory), [HOT](https://en.wikipedia.org/wiki/Higher-order_theories_of_consciousness)
 
 ## Why an AI person should care
 
@@ -6,13 +6,13 @@ Consciousness questions look philosophical until you ask: **does the system you'
 
 Three theories dominate. They are not mutually exclusive.
 
-## Global Workspace Theory (GWT) / Global Neuronal Workspace (GNW)
+## Global Workspace Theory (GWT) / Global Neuronal Workspace ([GNW](https://en.wikipedia.org/wiki/Global_workspace_theory))
 
 **The bet.** Consciousness = broadcast. A specialized **workspace** (anchored in long-range fronto-parietal connections) lets information from any specialist module become globally available.
 
-📄 [Dehaene, Changeux & colleagues — Global Neuronal Workspace, review 2011](https://en.wikipedia.org/wiki/Global_workspace_theory). Core empirical signature: a non-linear "ignition" event 200–300 ms after stimulus, where prefrontal-parietal activity erupts.
+📄 [Dehaene, Changeux & colleagues — Global Neuronal Workspace, review 2011](https://doi.org/10.1016/j.neuron.2011.03.018). Core empirical signature: a non-linear "ignition" event 200–300 ms after stimulus, where prefrontal-parietal activity erupts.
 
-**🤖 AI-relevance.** [Goyal & Bengio, 2022 — Inductive biases for higher-cognition AI](https://arxiv.org/abs/2011.15091) and [VanRullen & Kanai, 2021 — Deep learning and the Global Workspace Theory](https://arxiv.org/abs/2012.10390) are explicitly GWT-inspired AI architectures. The transformer's "[CLS] token broadcasts over residual stream" structure is loosely workspace-shaped.
+**🤖 AI-relevance.** [Goyal & Bengio, 2022 — Inductive biases for higher-cognition AI](https://arxiv.org/abs/2011.15091) and [VanRullen & Kanai, 2021 — Deep learning and the Global Workspace Theory](https://arxiv.org/abs/2012.10390) are explicitly GWT-inspired AI architectures. The transformer's "[[CLS](https://en.wikipedia.org/wiki/Catastrophic_interference)] token broadcasts over residual stream" structure is loosely workspace-shaped.
 
 ## Integrated Information Theory (IIT)
 
@@ -32,13 +32,13 @@ Three theories dominate. They are not mutually exclusive.
 
 **The bet.** A mental state is conscious iff there is a **higher-order representation of it**. Consciousness = self-model.
 
-Variants: HOR (representation), HOP (perception), HOMT (monitoring/meta-thought), [Lau & Rosenthal, 2011](https://en.wikipedia.org/wiki/Higher-order_theories_of_consciousness). Modern: [Graziano's Attention Schema Theory](https://en.wikipedia.org/wiki/Attention_schema_theory).
+Variants: HOR (representation), HOP (perception), HOMT (monitoring/meta-thought), [Lau & Rosenthal, 2011](https://doi.org/10.1016/j.tics.2011.05.009). Modern: [Graziano's Attention Schema Theory](https://en.wikipedia.org/wiki/Attention_schema_theory).
 
 **🤖 AI-relevance.** "Self-model" maps to introspection in LLMs. There is empirical work showing LLMs can report their own internal computations to some extent (e.g., [Anthropic's circuits & introspection work](https://transformer-circuits.pub/)). HOT predicts this is necessary, not sufficient.
 
 ## The 2023 adversarial collaboration
 
-📄 [Melloni, Mudrik, Pitts, Bendtz, Ferrante, Gorska, ..., Tononi, Koch, Dehaene, Lau, 2023 (Cogitate consortium) — preregistered adversarial test of IIT vs GWT](https://en.wikipedia.org/wiki/Neural_correlates_of_consciousness). Both theories made predictions, neither came out cleanly winning. The status quo: the science is genuinely unsettled.
+📄 [Melloni, Mudrik, Pitts, Bendtz, Ferrante, Gorska, ..., Tononi, Koch, Dehaene, Lau, 2023 (Cogitate consortium) — preregistered adversarial test of IIT vs GWT](https://doi.org/10.1038/s41586-025-08888-1). Both theories made predictions, neither came out cleanly winning. The status quo: the science is genuinely unsettled.
 
 ## Behavioral correlates: the Neural Correlates of Consciousness
 

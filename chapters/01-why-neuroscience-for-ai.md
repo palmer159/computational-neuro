@@ -1,4 +1,4 @@
-# Why neuroscience matters for AI/AGI
+# Why neuroscience matters for AI/[AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence)
 
 ## The honest answer
 
@@ -8,9 +8,9 @@ That is the case for caring. The case for **not** over-caring is that we may bui
 
 ## Three honest claims about neuro → AI
 
-1. **Neuroscience has historically lit the path.** Convolutional nets ([Hubel & Wiesel, 1962](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/)), reinforcement learning ([Schultz, Dayan & Montague, 1997](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf)), attention ([Itti & Koch, 2001](https://en.wikipedia.org/wiki/Saliency_map)), Hopfield networks ([Hopfield, 1982](https://www.pnas.org/doi/10.1073/pnas.79.8.2554)), Boltzmann machines, and dropout (loosely) all came from the brain.
+1. **Neuroscience has historically lit the path.** Convolutional nets ([Hubel & Wiesel, 1962](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/)), reinforcement learning ([Schultz, Dayan & Montague, 1997](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf)), attention ([Itti & Koch, 2001](https://doi.org/10.1038/35058500)), Hopfield networks ([Hopfield, 1982](https://www.pnas.org/doi/10.1073/pnas.79.8.2554)), Boltzmann machines, and dropout (loosely) all came from the brain.
 2. **Most of cortex is still a mystery.** We do not know how cortex learns, how it composes, how it sleeps-and-consolidates, or how it does one-shot abstraction. These are open and they overlap with what AGI is missing.
-3. **Convergence is real.** Trained CNNs predict V1/V2/V4/IT firing rates better than any hand-built model ([Yamins et al., 2014](https://www.pnas.org/doi/10.1073/pnas.1403112111)). Trained language models predict cortical responses to sentences ([Schrimpf et al., 2021](https://www.pnas.org/doi/10.1073/pnas.2105646118)). The brain and well-trained nets seem to be solving overlapping problems with overlapping solutions.
+3. **Convergence is real.** Trained CNNs predict [V1](https://en.wikipedia.org/wiki/Visual_cortex)/[V2](https://en.wikipedia.org/wiki/Visual_cortex)/[V4](https://en.wikipedia.org/wiki/Visual_cortex)/[IT](https://en.wikipedia.org/wiki/Inferior_temporal_gyrus) firing rates better than any hand-built model ([Yamins et al., 2014](https://www.pnas.org/doi/10.1073/pnas.1403112111)). Trained language models predict cortical responses to sentences ([Schrimpf et al., 2021](https://www.pnas.org/doi/10.1073/pnas.2105646118)). The brain and well-trained nets seem to be solving overlapping problems with overlapping solutions.
 
 ## What the brain still does that frontier AI does not
 
@@ -42,7 +42,7 @@ flowchart LR
 1. **Representation bridge.** Both deep nets and cortex form hierarchical, distributed, factorized codes. Studied by [Yamins & DiCarlo, 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6526887/).
 2. **Learning bridge.** Backprop vs biologically-plausible local rules. ([Lillicrap et al., 2020](https://arxiv.org/abs/2004.13316)).
 3. **Inference bridge.** Bayesian brain, predictive coding, free energy. ([Friston, 2010](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20A%20unified%20brain%20theory.pdf)).
-4. **Behavior bridge.** RL, model-based cognition, planning. ([Sutton & Barto, 2nd ed. 2018, free PDF](http://incompleteideas.net/book/the-book-2nd.html)).
+4. **Behavior bridge.** [RL](https://en.wikipedia.org/wiki/Reinforcement_learning), model-based cognition, planning. ([Sutton & Barto, 2nd ed. 2018, free PDF](http://incompleteideas.net/book/the-book-2nd.html)).
 
 ## Authoritative single-source starting points
 

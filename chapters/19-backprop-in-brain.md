@@ -37,7 +37,7 @@ Removes the symmetric-weights problem. Doesn't fully scale.
 
 ### 4. Burstprop / Dendritic learning
 
-📄 [Payeur, Guerguiev, Zenke, Richards & Naud, 2021 — Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits](https://en.wikipedia.org/wiki/Backpropagation). Pyramidal neurons emit two distinct signals — single spikes (forward) and bursts (error). Apical and basal dendrites separate forward and feedback streams. A neurally grounded version of backprop credit assignment.
+📄 [Payeur, Guerguiev, Zenke, Richards & Naud, 2021 — Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits](https://doi.org/10.1038/s41593-021-00857-x). Pyramidal neurons emit two distinct signals — single spikes (forward) and bursts (error). Apical and basal dendrites separate forward and feedback streams. A neurally grounded version of backprop credit assignment.
 
 ### 5. Target propagation
 
@@ -45,11 +45,11 @@ Removes the symmetric-weights problem. Doesn't fully scale.
 
 ### 6. Three-factor / neuromodulated Hebbian learning
 
-A global neuromodulator (dopamine, ACh) gates Hebbian learning. With eligibility traces, this implements approximate gradient methods.
+A global neuromodulator (dopamine, [ACh](https://en.wikipedia.org/wiki/Acetylcholine)) gates Hebbian learning. With eligibility traces, this implements approximate gradient methods.
 
 📄 [Frémaux & Gerstner, 2016](https://www.frontiersin.org/articles/10.3389/fncir.2015.00085/full). Standard reference.
 
-📄 [Roelfsema & Holtmaat, 2018 — Control of synaptic plasticity in deep cortical networks](https://en.wikipedia.org/wiki/Neuroplasticity). Argues attention + neuromodulation can coordinate deep credit assignment.
+📄 [Roelfsema & Holtmaat, 2018 — Control of synaptic plasticity in deep cortical networks](https://doi.org/10.1038/nrn.2018.6). Argues attention + neuromodulation can coordinate deep credit assignment.
 
 ### 7. Hebbian / contrastive / self-supervised learning
 
@@ -78,7 +78,7 @@ None of this is settled. It is a top-tier research frontier.
 
 Two distinct AI motivations care about this:
 
-1. **Understanding the brain to inspire AGI.** If we can identify what credit-assignment principle the brain actually uses, it might be more sample-efficient or composable than backprop.
+1. **Understanding the brain to inspire [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence).** If we can identify what credit-assignment principle the brain actually uses, it might be more sample-efficient or composable than backprop.
 2. **Beyond-backprop AI for hardware reasons.** Neuromorphic chips, on-device learning, massive parallelism — all benefit from local rules. This is the practical engine driving plausibility research now.
 
 ## Sources

@@ -24,14 +24,14 @@ A trained recurrent network's hidden state often settles into stereotyped trajec
 
 ### Decision-making as a 2-attractor network
 
-📄 [Wang, 2002 — Probabilistic decision making by slow reverberation in cortical circuits](https://en.wikipedia.org/wiki/Decision-making). A 2-attractor network with NMDA-driven slow reverberation reproduces psychophysical data on perceptual decision-making (and the famous LIP neuron ramp-up data of Shadlen and Newsome).
+📄 [Wang, 2002 — Probabilistic decision making by slow reverberation in cortical circuits](https://doi.org/10.1016/S0896-6273(02)01092-9). A 2-attractor network with [NMDA](https://en.wikipedia.org/wiki/NMDA_receptor)-driven slow reverberation reproduces psychophysical data on perceptual decision-making (and the famous LIP neuron ramp-up data of Shadlen and Newsome).
 
 ## Oscillations: the brain's rhythms
 
 | Band | Frequency | Where / when |
 |---|---|---|
 | Delta | 0.5–4 Hz | Slow-wave sleep |
-| Theta | 4–8 Hz | Hippocampus during exploration & REM |
+| Theta | 4–8 Hz | Hippocampus during exploration & [REM](https://en.wikipedia.org/wiki/Rapid_eye_movement_sleep) |
 | Alpha | 8–13 Hz | Eyes-closed cortex |
 | Beta | 13–30 Hz | Motor preparation |
 | Gamma | 30–100 Hz | Local cortical processing, attention |
@@ -51,17 +51,17 @@ A claim from physics-of-cortex: cortical activity hovers near a phase transition
 📄 [Beggs & Plenz, 2003 — Neuronal Avalanches in Neocortical Circuits](https://www.jneurosci.org/content/23/35/11167). Empirical signature: spike avalanches with power-law size distributions.
 📄 [Wilting & Priesemann, 2018](https://www.nature.com/articles/s41467-018-04725-4) — pushes back, says cortex is **subcritical**, not critical.
 
-**🤖 AI-relevance.** RNN training is sometimes pictured as targeting an "edge of chaos" regime. Mostly metaphor in ML; mostly metaphor in neuro too. Be skeptical.
+**🤖 AI-relevance.** [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network) training is sometimes pictured as targeting an "edge of chaos" regime. Mostly metaphor in ML; mostly metaphor in neuro too. Be skeptical.
 
 ## Excitation-inhibition balance
 
 A robust empirical finding: cortical networks are tuned so that excitatory and inhibitory inputs onto each neuron are balanced moment by moment. The result: irregular Poisson-like firing, fast responses, dynamic gain control.
 
-📄 [van Vreeswijk & Sompolinsky, 1996 — Chaos in neuronal networks with balanced excitatory and inhibitory activity](https://en.wikipedia.org/wiki/Network_neuroscience).
+📄 [van Vreeswijk & Sompolinsky, 1996 — Chaos in neuronal networks with balanced excitatory and inhibitory activity](https://doi.org/10.1126/science.274.5293.1724).
 
-**🤖 AI-relevance.** The "balanced amplification" regime predicts irregular asynchronous firing matching cortex; informs how to initialize and tune RNNs that aim to be brain-like. See [Murray et al., 2017](https://en.wikipedia.org/wiki/Network_neuroscience) for the modern follow-on.
+**🤖 AI-relevance.** The "balanced amplification" regime predicts irregular asynchronous firing matching cortex; informs how to initialize and tune RNNs that aim to be brain-like. See [Murray et al., 2017](https://doi.org/10.1038/s41586-018-0202-3) for the modern follow-on.
 
 ## Sources
 
 - Dayan & Abbott chs 7–8.
-- [Sussillo & Barak, 2013 — Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks](https://en.wikipedia.org/wiki/Recurrent_neural_network) — best methodological intro to analyzing trained RNNs as dynamical systems.
+- [Sussillo & Barak, 2013 — Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks](https://doi.org/10.1162/NECO_a_00409) — best methodological intro to analyzing trained RNNs as dynamical systems.

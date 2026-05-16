@@ -1,4 +1,4 @@
-# Roads to AGI / ASI: what neuroscience suggests is missing
+# Roads to [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) / [ASI](https://en.wikipedia.org/wiki/Superintelligence): what neuroscience suggests is missing
 
 The synthesis chapter. We will look at the AGI gap table from Ch 01 row by row and ask what neuroscience suggests is needed to close it.
 
@@ -45,7 +45,7 @@ Brains do not just predict next state; they intervene, simulate counterfactuals,
 
 The brain models its own confidence, knows what it doesn't know, and distinguishes "I know" from "I'm guessing." LLMs are calibration-poor; hallucinations are calibration failures. Higher-order theories of consciousness (Ch 10) literally identify metacognition as the substrate.
 
-**🤖 Implication.** Verifier-guided sampling, RLHF on calibration, self-consistency are first steps. The neural mechanism for metacognition is poorly understood — open frontier.
+**🤖 Implication.** Verifier-guided sampling, [RLHF](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback) on calibration, self-consistency are first steps. The neural mechanism for metacognition is poorly understood — open frontier.
 
 ### 5. Goal genesis
 
@@ -81,8 +81,8 @@ Artificial superintelligence — systems substantially beyond human in general c
 
 Neuroscience-informed observations relevant to alignment:
 
-- The brain's reward system is **hackable** and known to be hacked. Drug addiction is the existence proof of catastrophic reward hacking in a biological system. Alignment researchers should learn from how brains defend against this (PFC inhibition, satiety, social context, long-horizon evaluation) and how those defenses fail.
-- **Shard theory** in alignment ([Pope, 2022](https://www.lesswrong.com/posts/iCfdcxiyr2Kj8m8mT/the-shard-theory-of-human-values)) is roughly an attempt to extend RL + neuro models of human values to AI. Worth reading.
+- The brain's reward system is **hackable** and known to be hacked. Drug addiction is the existence proof of catastrophic reward hacking in a biological system. Alignment researchers should learn from how brains defend against this ([PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex) inhibition, satiety, social context, long-horizon evaluation) and how those defenses fail.
+- **Shard theory** in alignment ([Pope, 2022](https://www.lesswrong.com/posts/iCfdcxiyr2Kj8m8mT/the-shard-theory-of-human-values)) is roughly an attempt to extend [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) + neuro models of human values to AI. Worth reading.
 - **Embodied agency may be a feature, not a bug,** for alignment. A system without drives may be safer in some senses but harder to specify in others.
 
 ## What to actually read for AGI thinking
@@ -92,7 +92,7 @@ Neuroscience-informed observations relevant to alignment:
 - [Hassabis et al., 2017 — Neuroscience-Inspired AI](https://arxiv.org/abs/1709.05206). The DeepMind manifesto.
 - [Bengio, 2017 — The consciousness prior](https://arxiv.org/abs/1709.08568). Workspace-flavored AGI proposal.
 - [Doerig et al., 2023 — Neuroconnectionist research programme](https://arxiv.org/abs/2209.03718).
-- [Mitchell — Artificial Intelligence: A Guide for Thinking Humans (book, 2019)](https://en.wikipedia.org/wiki/Melanie_Mitchell) — most balanced popular treatment.
+- [Mitchell — Artificial Intelligence: A Guide for Thinking Humans (book, 2019)](https://en.wikipedia.org/wiki/Artificial_Intelligence:_A_Guide_for_Thinking_Humans) — most balanced popular treatment.
 
 ## Practical research stance
 

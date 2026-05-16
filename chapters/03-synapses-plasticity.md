@@ -2,7 +2,7 @@
 
 ## The synapse in 60 seconds
 
-A synapse is a junction where one neuron's axon terminal meets another neuron's dendrite. Spike arrives → calcium influx → vesicles fuse → neurotransmitter (glutamate / GABA / dopamine / etc.) crosses the cleft → binds receptors on the postsynaptic side → opens ion channels → changes postsynaptic voltage.
+A synapse is a junction where one neuron's axon terminal meets another neuron's dendrite. Spike arrives → calcium influx → vesicles fuse → neurotransmitter (glutamate / [GABA](https://en.wikipedia.org/wiki/Gamma-Aminobutyric_acid) / dopamine / etc.) crosses the cleft → binds receptors on the postsynaptic side → opens ion channels → changes postsynaptic voltage.
 
 ```mermaid
 flowchart LR
@@ -43,11 +43,11 @@ LTP   ___
    <-- pre after post   pre before post -->
 ```
 
-**🤖 AI-relevance.** STDP is local, asymmetric, and online. It is the closest biological analogue we have to a "learning rule," and it doesn't look like backprop. Whole subfields (e.g. surrogate-gradient SNNs, predictive-coding nets) try to bridge backprop ↔ STDP.
+**🤖 AI-relevance.** [STDP](https://en.wikipedia.org/wiki/Spike-timing-dependent_plasticity) is local, asymmetric, and online. It is the closest biological analogue we have to a "learning rule," and it doesn't look like backprop. Whole subfields (e.g. surrogate-gradient SNNs, predictive-coding nets) try to bridge backprop ↔ STDP.
 
-## LTP & LTD: the molecular substrate of memory
+## [LTP](https://en.wikipedia.org/wiki/Long-term_potentiation) & [LTD](https://en.wikipedia.org/wiki/Long-term_depression): the molecular substrate of memory
 
-- **LTP** (long-term potentiation) — sustained increase in synaptic strength after high-frequency stimulation. Discovered by [Bliss & Lømo, 1973](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1350458/) in rabbit hippocampus. NMDA-dependent.
+- **LTP** (long-term potentiation) — sustained increase in synaptic strength after high-frequency stimulation. Discovered by [Bliss & Lømo, 1973](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1350458/) in rabbit hippocampus. [NMDA](https://en.wikipedia.org/wiki/NMDA_receptor)-dependent.
 - **LTD** (long-term depression) — the inverse.
 - **Late-LTP** requires protein synthesis → links plasticity to gene expression and the molecular machinery of memory consolidation.
 
@@ -59,7 +59,7 @@ LTP   ___
 | Homeostatic | Whole neuron | hours | Layer-norm, weight decay |
 | Synaptic scaling | All synapses on a neuron | hours–days | Normalization |
 | Heterosynaptic | Neighboring synapses | min | Competition |
-| Neuromodulatory (3-factor) | Gated by dopamine/ACh/NA | s–min | Reward-modulated learning |
+| Neuromodulatory (3-factor) | Gated by dopamine/[ACh](https://en.wikipedia.org/wiki/Acetylcholine)/NA | s–min | Reward-modulated learning |
 | Structural | Spine growth/pruning | days–years | Architecture search |
 
 The **3-factor rule** is the bridge most AI people miss: $\Delta w = \eta \cdot \text{pre} \cdot \text{post} \cdot M$ where $M$ is a global modulatory signal (dopamine, ACh). It maps cleanly onto reward-gated learning and is how the brain plausibly does credit assignment without backprop. See [Frémaux & Gerstner, 2016](https://www.frontiersin.org/articles/10.3389/fncir.2015.00085/full).
@@ -87,10 +87,10 @@ Plain neural nets forget old tasks when trained on new ones. The brain doesn't. 
 - **Replay** — hippocampus replays past episodes during sleep, training neocortex slowly. ML analogue: replay buffers.
 - **Modular architectures** — different circuits for different skills.
 
-**🤖 AI-relevance.** Continual learning is a row in the AGI gap table (Ch 01). Plasticity research is where the candidate solutions live.
+**🤖 AI-relevance.** Continual learning is a row in the [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) gap table (Ch 01). Plasticity research is where the candidate solutions live.
 
 ## Sources
 
 - Kandel ch 66–67 (cellular mechanisms of learning).
-- [Magee & Grienberger, 2020 — Synaptic plasticity forms and functions](https://en.wikipedia.org/wiki/Synaptic_plasticity) — modern review.
-- [Abbott & Nelson, 2000 — Synaptic plasticity: taming the beast](https://en.wikipedia.org/wiki/Synaptic_plasticity) — classic.
+- [Magee & Grienberger, 2020 — Synaptic plasticity forms and functions](https://doi.org/10.1146/annurev-neuro-090919-022842) — modern review.
+- [Abbott & Nelson, 2000 — Synaptic plasticity: taming the beast](https://doi.org/10.1038/81453) — classic.

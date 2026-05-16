@@ -4,20 +4,20 @@ A practical tour of architectures that visibly take from neuroscience. None is c
 
 ## Spiking neural networks (SNNs)
 
-Discrete, event-driven networks of spiking neurons (LIF or Izhikevich). Bring in:
+Discrete, event-driven networks of spiking neurons ([LIF](https://en.wikipedia.org/wiki/Biological_neuron_model) or Izhikevich). Bring in:
 
 - Temporal coding.
 - Sparse activations (only spikes consume energy).
 - Neuromorphic hardware compatibility.
 
 **Training.** Three approaches:
-1. **Convert ANN → SNN.** Train a rate model, replace ReLU with rate-coded spiking neuron. Works for vision, struggles for time-extended tasks.
+1. **Convert [ANN](https://en.wikipedia.org/wiki/Artificial_neural_network) → [SNN](https://en.wikipedia.org/wiki/Spiking_neural_network).** Train a rate model, replace [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) with rate-coded spiking neuron. Works for vision, struggles for time-extended tasks.
 2. **Surrogate gradient.** Replace the non-differentiable spike with a smooth surrogate at backward pass. ([Neftci, Mostafa & Zenke, 2019](https://arxiv.org/abs/1901.09948)).
-3. **Local rules** (STDP, three-factor). Less effective at scale, more biologically plausible.
+3. **Local rules** ([STDP](https://en.wikipedia.org/wiki/Spike-timing-dependent_plasticity), three-factor). Less effective at scale, more biologically plausible.
 
 **Hardware.**
 - **Intel Loihi 2** — 1M neurons per chip, on-chip learning. [docs](https://en.wikipedia.org/wiki/Cognitive_computer).
-- **IBM TrueNorth, NorthPole** — research chips ([Modha et al., 2023](https://en.wikipedia.org/wiki/TrueNorth)).
+- **IBM TrueNorth, NorthPole** — research chips ([Modha et al., 2023](https://doi.org/10.1126/science.adh1174)).
 - **SpiNNaker 2** — Manchester, ARM-based. [SpiNNaker](https://apt.cs.manchester.ac.uk/projects/SpiNNaker/).
 - **BrainScaleS** — analog accelerated emulation.
 
@@ -46,7 +46,7 @@ Practical use cases: neuromorphic hardware, on-device continual learning, energy
 
 ## Liquid neural networks / continuous-time
 
-📄 [Hasani et al., 2021 — Liquid time-constant networks](https://arxiv.org/abs/2006.04439). Continuous-time RNN with input-dependent time constants — closer to biophysics. Works well on small robotics tasks.
+📄 [Hasani et al., 2021 — Liquid time-constant networks](https://arxiv.org/abs/2006.04439). Continuous-time [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network) with input-dependent time constants — closer to biophysics. Works well on small robotics tasks.
 
 ## Hierarchical Temporal Memory (Numenta)
 
@@ -56,7 +56,7 @@ Jeff Hawkins' research. Cortical-microcolumn-inspired sparse distributed represe
 
 A fixed random recurrent network with trained linear readout. Cheap; sometimes competitive on small dynamical tasks. Loosely cortex-flavored (random dynamics + readout).
 
-📄 [Jaeger, 2001 — The "echo state" approach to analysing and training recurrent neural networks](https://en.wikipedia.org/wiki/Echo_state_network).
+📄 [Jaeger, 2001 — The "echo state" approach to analysing and training recurrent neural networks](https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf).
 
 ## State-space models — adjacent if not neuro-inspired
 
@@ -75,10 +75,10 @@ Honest summary:
 | Standard benchmarks | No — transformers + scaling still wins |
 | Explanatory traction in cognitive science | Yes — predictive coding, attractor networks |
 
-Don't expect neuro-inspired architectures to beat transformers at LLM benchmarks any time soon. Do expect them to matter for embodied, on-device, energy-constrained, or scientifically-motivated work.
+Don't expect neuro-inspired architectures to beat transformers at [LLM](https://en.wikipedia.org/wiki/Large_language_model) benchmarks any time soon. Do expect them to matter for embodied, on-device, energy-constrained, or scientifically-motivated work.
 
 ## Sources
 
 - [Tavanaei et al., 2019 — Deep learning in spiking neural networks](https://arxiv.org/abs/1804.08150).
 - [Pfeiffer & Pfeil, 2018 — Deep learning with spiking neurons: opportunities & challenges](https://www.frontiersin.org/articles/10.3389/fnins.2018.00774/full).
-- [Davies et al., 2021 — Advancing neuromorphic computing with Loihi](https://en.wikipedia.org/wiki/Neuromorphic_engineering).
+- [Davies et al., 2021 — Advancing neuromorphic computing with Loihi](https://doi.org/10.3389/fnins.2021.617527).

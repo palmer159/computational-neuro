@@ -6,13 +6,13 @@ Three roughly orthogonal axes (Posner & Petersen, 1990; modernized [Petersen & P
 
 - **Alerting** — global arousal; locus coeruleus, noradrenaline.
 - **Orienting** — directing the spotlight; superior parietal, frontal eye fields.
-- **Executive control** — selecting among conflicts; ACC, dlPFC.
+- **Executive control** — selecting among conflicts; [ACC](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex), dlPFC.
 
 And a separate distinction between **bottom-up** (stimulus-driven, salient pop-out) and **top-down** (goal-driven) attention.
 
 ## Biased competition: the canonical neural mechanism
 
-📄 [Desimone & Duncan, 1995 — Neural mechanisms of selective visual attention](https://en.wikipedia.org/wiki/Visual_attention). Multiple stimuli compete for representation; top-down signals from PFC bias the competition toward the goal-relevant one. Empirical signature: a V4 neuron's response to its preferred stimulus is enhanced when attended.
+📄 [Desimone & Duncan, 1995 — Neural mechanisms of selective visual attention](https://doi.org/10.1146/annurev.ne.18.030195.001205). Multiple stimuli compete for representation; top-down signals from [PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex) bias the competition toward the goal-relevant one. Empirical signature: a [V4](https://en.wikipedia.org/wiki/Visual_cortex) neuron's response to its preferred stimulus is enhanced when attended.
 
 **🤖 AI-relevance.** Soft attention in transformers is exactly this: query-driven competition resolved by softmax. It's striking how directly the biased-competition motif maps to QKV attention. See Ch 22.
 
@@ -35,9 +35,9 @@ PFC neurons don't cleanly encode "rule X" vs "stimulus Y." They encode random-lo
 
 ## Cognitive control & the rule-governed brain
 
-📄 [Miller & Cohen, 2001 — An integrative theory of prefrontal cortex function](https://en.wikipedia.org/wiki/Prefrontal_cortex#Theories_of_function). PFC represents goals and rules; biases processing throughout cortex to favor goal-consistent computations.
+📄 [Miller & Cohen, 2001 — An integrative theory of prefrontal cortex function](https://doi.org/10.1146/annurev.neuro.24.1.167). PFC represents goals and rules; biases processing throughout cortex to favor goal-consistent computations.
 
-**🤖 AI-relevance.** This is the cleanest neuro framing of "in-context instruction-following." Modern LLM RLHF and instruction tuning produce systems that hold a specification and bias generation toward it. Whether the mechanism is the same is open and very interesting.
+**🤖 AI-relevance.** This is the cleanest neuro framing of "in-context instruction-following." Modern [LLM](https://en.wikipedia.org/wiki/Large_language_model) [RLHF](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback) and instruction tuning produce systems that hold a specification and bias generation toward it. Whether the mechanism is the same is open and very interesting.
 
 ## Metacognition & error monitoring
 
@@ -47,7 +47,7 @@ The brain represents its own confidence. [Fleming & Lau, 2014](https://www.front
 
 ## Cognitive flexibility & set-shifting
 
-Switching strategies under feedback is mediated by PFC + striatum. Dopamine controls the **stay vs switch** trade-off. Tonic vs phasic dopamine roughly maps to exploration vs exploitation. See [Cools & D'Esposito, 2011](https://en.wikipedia.org/wiki/Dopamine#Cognition_and_frontal_cortex).
+Switching strategies under feedback is mediated by PFC + striatum. Dopamine controls the **stay vs switch** trade-off. Tonic vs phasic dopamine roughly maps to exploration vs exploitation. See [Cools & D'Esposito, 2011](https://doi.org/10.1016/j.biopsych.2011.03.028).
 
 ## Sources
 

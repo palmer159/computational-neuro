@@ -4,15 +4,15 @@ The empirical finding that brought deep learning back to neuroscience.
 
 ## The result that started this wave
 
-📄 [Yamins, Hong, Cadieu, Solomon, Seibert & DiCarlo, 2014 — Performance-optimized hierarchical models predict neural responses in higher visual cortex](https://www.pnas.org/doi/10.1073/pnas.1403112111). Train a CNN on ImageNet; its top layers predict macaque IT firing rates better than any prior model. ImageNet performance and IT-prediction are correlated.
+📄 [Yamins, Hong, Cadieu, Solomon, Seibert & DiCarlo, 2014 — Performance-optimized hierarchical models predict neural responses in higher visual cortex](https://www.pnas.org/doi/10.1073/pnas.1403112111). Train a [CNN](https://en.wikipedia.org/wiki/Convolutional_neural_network) on ImageNet; its top layers predict macaque [IT](https://en.wikipedia.org/wiki/Inferior_temporal_gyrus) firing rates better than any prior model. ImageNet performance and IT-prediction are correlated.
 
-Three years later: [Kriegeskorte, 2015 — Deep neural networks: a new framework for modeling biological vision and brain information processing](https://en.wikipedia.org/wiki/Convolutional_neural_network#Biological_inspiration). The framing that cemented the methodology.
+Three years later: [Kriegeskorte, 2015 — Deep neural networks: a new framework for modeling biological vision and brain information processing](https://doi.org/10.1146/annurev-vision-082114-035447). The framing that cemented the methodology.
 
 ## Brain-Score: the leaderboard
 
-[Schrimpf et al. — Brain-Score: which artificial neural network for object recognition is most brain-like?](https://www.brain-score.org/). Standard benchmark: how well does your model predict V1, V2, V4, IT recordings, plus behavioral consistency? Anyone publishing a model of vision references this.
+[Schrimpf et al. — Brain-Score: which artificial neural network for object recognition is most brain-like?](https://www.brain-score.org/). Standard benchmark: how well does your model predict [V1](https://en.wikipedia.org/wiki/Visual_cortex), [V2](https://en.wikipedia.org/wiki/Visual_cortex), [V4](https://en.wikipedia.org/wiki/Visual_cortex), IT recordings, plus behavioral consistency? Anyone publishing a model of vision references this.
 
-Notable trend: the strongest predictors of brain data are **the strongest models on ImageNet/CLIP-style benchmarks**, not models that "look biological." Performance, not plausibility, predicts brain-likeness — within vision.
+Notable trend: the strongest predictors of brain data are **the strongest models on ImageNet/[CLIP](https://arxiv.org/abs/2103.00020)-style benchmarks**, not models that "look biological." Performance, not plausibility, predicts brain-likeness — within vision.
 
 ## Beyond vision: language
 
@@ -20,7 +20,7 @@ Notable trend: the strongest predictors of brain data are **the strongest models
 
 📄 [Caucheteux & King, 2022 — Brains and algorithms partially converge in natural language processing](https://www.nature.com/articles/s42003-022-03036-1). Confirms and extends.
 
-📄 [Goldstein et al., 2022 — Shared computational principles for language processing in humans and deep language models](https://en.wikipedia.org/wiki/Language_model). ECoG recordings during natural conversation predicted by GPT-2 embeddings.
+📄 [Goldstein et al., 2022 — Shared computational principles for language processing in humans and deep language models](https://doi.org/10.1038/s41593-022-00766-3). [ECoG](https://en.wikipedia.org/wiki/Electrocorticography) recordings during natural conversation predicted by [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)-2 embeddings.
 
 **🤖 AI-relevance.** The convergence holds beyond vision. Language cortex behaves like a LM. This does not mean human language IS GPT — it means whatever cortex is computing for language is in a representational neighborhood that next-token prediction also reaches.
 
@@ -28,7 +28,7 @@ Notable trend: the strongest predictors of brain data are **the strongest models
 
 📄 [Kell, Yamins, Shook, Norman-Haignere & McDermott, 2018 — A task-optimized neural network replicates human auditory behavior, predicts brain responses, and reveals a cortical processing hierarchy](https://mcdermottlab.mit.edu/papers/Kell_etal_2018_DNN_auditory_cortex.pdf).
 
-CNNs trained on speech + music predict A1 and beyond.
+CNNs trained on speech + music predict [A1](https://en.wikipedia.org/wiki/Auditory_cortex) and beyond.
 
 ## What this convergence is and is not
 
@@ -41,9 +41,9 @@ This caveat has spawned a literature on **how to use ANNs as scientific models w
 📄 [Cao & Yamins, 2024 — Explanatory models in neuroscience, Part 1 & 2](https://arxiv.org/abs/2104.01489) — careful philosophy.
 📄 [Doerig et al., 2023 — The neuroconnectionist research programme](https://arxiv.org/abs/2209.03718) — the field's status doc.
 
-## Representational Similarity Analysis (RSA)
+## Representational Similarity Analysis ([RSA](https://www.frontiersin.org/articles/10.3389/neuro.06.004.2008/full))
 
-A common methodology: compute pairwise stimulus-by-stimulus similarity matrices in (a) brain population activity, (b) ANN layer activations. Compare matrices.
+A common methodology: compute pairwise stimulus-by-stimulus similarity matrices in (a) brain population activity, (b) [ANN](https://en.wikipedia.org/wiki/Artificial_neural_network) layer activations. Compare matrices.
 
 📄 [Kriegeskorte, Mur & Bandettini, 2008 — Representational similarity analysis](https://www.frontiersin.org/articles/10.3389/neuro.06.004.2008/full).
 
@@ -56,7 +56,7 @@ Even within vision:
 - **Adversarial robustness** is poor in CNNs but not in primates ([Geirhos et al.](https://arxiv.org/abs/1811.12231)).
 - **Texture vs shape bias** differs.
 - **Sample efficiency** is dramatically different — humans need orders of magnitude fewer examples.
-- **Recurrence**. Cortex is massively recurrent; CNNs are mostly feedforward. Adding recurrence improves brain prediction, especially for difficult/occluded stimuli ([Kar et al., 2019](https://en.wikipedia.org/wiki/Recurrent_neural_network)).
+- **Recurrence**. Cortex is massively recurrent; CNNs are mostly feedforward. Adding recurrence improves brain prediction, especially for difficult/occluded stimuli ([Kar et al., 2019](https://doi.org/10.1038/s41593-019-0392-5)).
 
 ## Strong takeaway
 
@@ -66,4 +66,4 @@ Where backprop-trained nets succeed at cortex prediction, they vindicate a resea
 
 - [Doerig et al., 2023](https://arxiv.org/abs/2209.03718).
 - [Yamins & DiCarlo, 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6526887/).
-- [Kriegeskorte & Douglas, 2018](https://en.wikipedia.org/wiki/Cognitive_neuroscience).
+- [Kriegeskorte & Douglas, 2018](https://doi.org/10.1038/s41593-018-0210-5).

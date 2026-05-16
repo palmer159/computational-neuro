@@ -2,9 +2,9 @@
 
 ## What LLMs are, by neuroscience standards
 
-A frontier LLM is:
+A frontier [LLM](https://en.wikipedia.org/wiki/Large_language_model) is:
 - A massive distributed associative memory.
-- Trained primarily by self-supervised next-token prediction on broad text + multimodal data, then RL'd.
+- Trained primarily by self-supervised next-token prediction on broad text + multimodal data, then [RL](https://en.wikipedia.org/wiki/Reinforcement_learning)'d.
 - Capable of **in-context learning**, **chain-of-thought reasoning**, **tool use**, **multi-turn agency**.
 - Not embodied. Not continually learning. No long-term memory beyond context.
 
@@ -22,15 +22,15 @@ flowchart LR
     Wer --> Sem[Anterior temporal lobe<br/>semantics]
 ```
 
-Modern view ([Hagoort, 2016](https://en.wikipedia.org/wiki/Broca%27s_area); [Fedorenko, Ivanova & Regev, 2024](https://en.wikipedia.org/wiki/Language_module)):
+Modern view ([Hagoort, 2016](https://doi.org/10.1126/science.aaf1836); [Fedorenko, Ivanova & Regev, 2024](https://doi.org/10.1038/s41583-024-00802-4)):
 
 - **Language network** is fronto-temporal, left-lateralized in most people.
 - Specialized — clearly dissociable from general reasoning, math, music, theory of mind.
 - **Selective**: brain damage can leave reasoning intact while abolishing language.
 
-📄 [Fedorenko, Ivanova & Regev, 2024 — The language network as a natural kind within the broader landscape of the human brain](https://en.wikipedia.org/wiki/Language_module). Required reading. Argues the language network is for **communication**, not thought.
+📄 [Fedorenko, Ivanova & Regev, 2024 — The language network as a natural kind within the broader landscape of the human brain](https://doi.org/10.1038/s41583-024-00802-4). Required reading. Argues the language network is for **communication**, not thought.
 
-This is consequential for AI: if language is a communication interface, then a system trained only on language is missing whatever else thought consists of — perception, action, motivation, memory beyond context. **LLMs may be very good at the linguistic interface to cognition while missing what cognition is.** This is the strongest contemporary case for caution about LLM-as-AGI.
+This is consequential for AI: if language is a communication interface, then a system trained only on language is missing whatever else thought consists of — perception, action, motivation, memory beyond context. **LLMs may be very good at the linguistic interface to cognition while missing what cognition is.** This is the strongest contemporary case for caution about LLM-as-[AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence).
 
 ## LLMs as models of language cortex
 
@@ -57,7 +57,7 @@ This is consequential for AI: if language is a communication interface, then a s
 
 ## Theory of mind in LLMs
 
-📄 [Kosinski, 2024 — Evaluating large language models in theory of mind tasks](https://arxiv.org/abs/2302.02083). LLMs pass classic false-belief tasks at GPT-4 level.
+📄 [Kosinski, 2024 — Evaluating large language models in theory of mind tasks](https://arxiv.org/abs/2302.02083). LLMs pass classic false-belief tasks at [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)-4 level.
 📄 [Ullman, 2023 — Large Language Models Fail on Trivial Alterations to Theory-of-Mind Tasks](https://arxiv.org/abs/2302.08399). Same tasks slightly perturbed → failure. Shows LLM ToM is fragile.
 
 This is a great microcosm of the LLM-as-cognition debate. Both citations true.
@@ -81,6 +81,6 @@ LLMs are pre-trained on text. Words refer to things in a world LLMs do not direc
 
 ## Sources
 
-- [Christiansen & Chater, 2008 — Language as shaped by the brain](https://en.wikipedia.org/wiki/Language_module) — language as biological adaptation.
-- [Fedorenko & Varley, 2016 — Language and thought are not the same thing](https://en.wikipedia.org/wiki/Language_module).
+- [Christiansen & Chater, 2008 — Language as shaped by the brain](https://doi.org/10.1017/S0140525X08004998) — language as biological adaptation.
+- [Fedorenko & Varley, 2016 — Language and thought are not the same thing](https://doi.org/10.1111/nyas.13046).
 - [Lake, Ullman, Tenenbaum & Gershman, 2017](https://arxiv.org/abs/1604.00289) — what AI is missing, from cognitive science.

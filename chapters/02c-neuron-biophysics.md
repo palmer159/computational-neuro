@@ -47,7 +47,7 @@ Read: [Izhikevich, 2003 — Simple model of spiking neurons](https://www.izhikev
 
 A naive view: dendrites sum inputs linearly, soma decides. Real view: dendrites perform local nonlinear computations — NMDA spikes, dendritic plateaus, branch-specific learning. A pyramidal neuron is closer to a small multi-layer network than a single unit.
 
-📄 [Beniaguev, Segev & London, 2021 — Single cortical neurons as deep ANNs](https://en.wikipedia.org/wiki/Pyramidal_cell) — they fit a deep (5–8 layer) network to match a single L5 pyramidal neuron's I/O. Sobering.
+📄 [Beniaguev, Segev & London, 2021 — Single cortical neurons as deep ANNs](https://doi.org/10.1016/j.neuron.2021.07.002) — they fit a deep (5–8 layer) network to match a single L5 pyramidal neuron's I/O. Sobering.
 
 **🤖 AI-relevance.** This paper is the strongest single argument that "1 ANN unit ≈ 1 neuron" is wrong by 2–3 orders of magnitude. Pure scaling debates often skip this.
 

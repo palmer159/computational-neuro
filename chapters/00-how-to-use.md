@@ -5,7 +5,7 @@
 You are someone who understands the basics of machine learning, deep learning, and AI. You know **zero neuroscience**. You want to understand the brain well enough to:
 - understand relevance of neuroscience for AI
 - understand neuro-inspired AI papers
-- form your own view on what AGI/ASI is missing
+- form your own view on what [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence)/[ASI](https://en.wikipedia.org/wiki/Superintelligence) is missing
 
 This is **not** a neuroscience textbook. It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. This guide is a curated list of articles with links to relevant research papers without a paywall. 
 
@@ -18,7 +18,7 @@ Note that the most productive AI researchers in this space (DeepMind, Numenta, M
 | 1 weekend | Ch 01, 02a, 02b, 02c, 09, 13, 18, 22, 25 |
 | 2 weeks of evenings | Part II + Part IV |
 | 1 quarter | All of it, in order |
-| Just want LLM-relevance | Ch 13, 14, 18, 22, 23, 25 |
+| Just want [LLM](https://en.wikipedia.org/wiki/Large_language_model)-relevance | Ch 13, 14, 18, 22, 23, 25 |
 
 ## Conventions
 

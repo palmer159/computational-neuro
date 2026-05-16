@@ -6,13 +6,13 @@ This chapter is the single tightest neuro→AI mapping in existence. If you read
 
 📄 [Schultz, Dayan & Montague, 1997 — A neural substrate of prediction and reward](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf).
 
-They recorded dopamine neurons in monkey VTA during a Pavlovian conditioning task. Three findings:
+They recorded dopamine neurons in monkey [VTA](https://en.wikipedia.org/wiki/Ventral_tegmental_area) during a Pavlovian conditioning task. Three findings:
 
 1. **Unexpected reward** → dopamine burst.
 2. **Expected reward predicted by a cue** → no burst at reward; burst shifts to the cue.
 3. **Predicted reward omitted** → dopamine **dip** at the expected time.
 
-This is the temporal-difference (TD) error from Sutton & Barto's RL textbook, **measured in the brain**. One of the most consequential results in neuroscience for AI.
+This is the temporal-difference ([TD](https://en.wikipedia.org/wiki/Temporal_difference_learning)) error from Sutton & Barto's [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) textbook, **measured in the brain**. One of the most consequential results in neuroscience for AI.
 
 ```
   RPE = r + γ V(s') − V(s)
@@ -37,20 +37,20 @@ The dominant computational interpretation:
 - **Indirect (D2) pathway** = "No-Go" — suppresses alternatives.
 - **Dopamine** modulates plasticity: TD error trains both pathways.
 
-Read: [Frank, 2005 — Dynamic dopamine modulation in the basal ganglia](https://en.wikipedia.org/wiki/Basal_ganglia#Reinforcement_learning).
+Read: [Frank, 2005 — Dynamic dopamine modulation in the basal ganglia](https://doi.org/10.1162/0898929052880093).
 
-**🤖 AI-relevance.** Actor-critic algorithms (A2C, A3C, SAC, PPO) are the closest computational framework we have to a working BG model. The mapping is not loose — Schultz, Sutton, Barto, Doya, Dayan, Montague all crossed the bridge.
+**🤖 AI-relevance.** Actor-critic algorithms (A2C, A3C, SAC, [PPO](https://en.wikipedia.org/wiki/Proximal_policy_optimization)) are the closest computational framework we have to a working [BG](https://en.wikipedia.org/wiki/Basal_ganglia) model. The mapping is not loose — Schultz, Sutton, Barto, Doya, Dayan, Montague all crossed the bridge.
 
 ## Model-free vs model-based: the two RL systems
 
 Behavioral data suggests animals (and humans) use both:
 
 - **Model-free** — habit, fast, BG-driven. Cached values from past experience.
-- **Model-based** — flexible, slow, hippocampus + dorsomedial PFC. Tree search through a learned model.
+- **Model-based** — flexible, slow, hippocampus + dorsomedial [PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex). Tree search through a learned model.
 
 📄 [Daw, Niv & Dayan, 2005 — Uncertainty-based competition between prefrontal and dorsolateral striatal systems](https://www.princeton.edu/~ndaw/dnd05.pdf). Brain arbitrates between systems based on which one is more confident.
 
-**🤖 AI-relevance.** Modern AI converges: AlphaZero uses model-based MCTS with model-free value learning. Dyna and successor representations bridge the two. The brain may be running a similar hybrid.
+**🤖 AI-relevance.** Modern AI converges: AlphaZero uses model-based [MCTS](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search) with model-free value learning. Dyna and successor representations bridge the two. The brain may be running a similar hybrid.
 
 ## Distributional RL in dopamine neurons
 
@@ -82,10 +82,10 @@ Pop-science says "dopamine = pleasure." This is wrong in three ways:
 2. Dopamine signals **prediction error** and **incentive salience**, not reward itself.
 3. Tonic dopamine signals **vigor / motivation** (Niv et al., 2007), not pleasure.
 
-Read [Berridge & Robinson, 1998 — What is the role of dopamine in reward](https://en.wikipedia.org/wiki/Incentive_salience) to see the careful version.
+Read [Berridge & Robinson, 1998 — What is the role of dopamine in reward](https://doi.org/10.1016/S0165-0173(98)00019-8) to see the careful version.
 
 ## Sources
 
 - Sutton & Barto 2nd ed., ch 1, 6, 14, 15. [Free PDF](http://incompleteideas.net/book/the-book-2nd.html).
 - [Niv, 2009 — Reinforcement learning in the brain](https://www.princeton.edu/~yael/Publications/Niv2009.pdf) — best pedagogical review.
-- [Dayan & Daw, 2008 — Decision theory, reinforcement learning, and the brain](https://en.wikipedia.org/wiki/Reinforcement_learning#Reinforcement_learning_in_humans_and_animals).
+- [Dayan & Daw, 2008 — Decision theory, reinforcement learning, and the brain](https://doi.org/10.3758/CABN.8.4.429).

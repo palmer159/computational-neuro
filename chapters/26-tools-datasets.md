@@ -28,14 +28,14 @@
 - **[Nengo](https://www.nengo.ai/)** — Eliasmith's Neural Engineering Framework, builds Spaun-style cognitive models.
 - **[snnTorch](https://snntorch.readthedocs.io/)** — surrogate-gradient SNNs in PyTorch.
 - **[NetPyNE](http://www.netpyne.org/)** — high-level network construction over NEURON.
-- **[CARLsim](http://www.socsci.uci.edu/~jkrichma/CARLsim/)** — GPU SNN simulator.
+- **[CARLsim](http://www.socsci.uci.edu/~jkrichma/CARLsim/)** — GPU [SNN](https://en.wikipedia.org/wiki/Spiking_neural_network) simulator.
 - **[BindsNET](https://github.com/BindsNET/bindsnet)** — PyTorch-based SNN library.
 
 ## Datasets and benchmarks
 
 ### Neural data
 - **[Allen Brain Observatory](https://observatory.brain-map.org/visualcoding/)** — large-scale mouse visual cortex two-photon recordings.
-- **[International Brain Lab](https://www.internationalbrainlab.com/)** — standardized ephys + behavior data across labs.
+- **[International Brain Lab](https://internationalbrainlab.org/)** — standardized ephys + behavior data across labs.
 - **[DANDI Archive](https://dandiarchive.org/)** — community archive of neural data in NWB format.
 - **[OpenNeuro](https://openneuro.org/)** — standardized neuroimaging.
 - **[Steinmetz et al. Neuropixels](https://figshare.com/articles/dataset/Distributed_coding_of_choice_action_and_engagement_across_the_mouse_brain/9598406)** — large-scale mouse Neuropixels.
@@ -60,7 +60,7 @@
 ## Communities & places to track
 
 - **[CCN — Cognitive Computational Neuroscience](https://2024.ccneuro.org/)** — the field's annual meeting.
-- **[NeurIPS](https://neurips.cc/)** — neuroscience track + interpretability + RL.
+- **[NeurIPS](https://neurips.cc/)** — neuroscience track + interpretability + [RL](https://en.wikipedia.org/wiki/Reinforcement_learning).
 - **[COSYNE](https://www.cosyne.org/)** — computational + systems neuroscience.
 - **[Society for Neuroscience (SfN)](https://www.sfn.org/)** — main neuroscience meeting, 30k+ attendees.
 - **[NeuroAI Meetup](https://www.neuroai.science/)** — newer venue.

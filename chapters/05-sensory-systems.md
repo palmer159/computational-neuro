@@ -2,7 +2,7 @@
 
 ## Why sensory systems are the easiest entry point for an AI person
 
-We understand sensory cortex better than any other part of the brain. The **direct ancestor of CNNs is V1**. If you only deeply learn one bit of neuroanatomy, learn the visual system.
+We understand sensory cortex better than any other part of the brain. The **direct ancestor of CNNs is [V1](https://en.wikipedia.org/wiki/Visual_cortex)**. If you only deeply learn one bit of neuroanatomy, learn the visual system.
 
 ## The visual system: the canonical hierarchy
 
@@ -64,17 +64,17 @@ flowchart LR
     A2 --> Lang[Wernicke's, language areas]
 ```
 
-Cochlea is a **mechanical Fourier analyzer**: hair cells along the basilar membrane respond to different frequencies. A1 has a **tonotopic map** — adjacent neurons respond to adjacent frequencies, like a spectrogram laid on cortex.
+Cochlea is a **mechanical Fourier analyzer**: hair cells along the basilar membrane respond to different frequencies. [A1](https://en.wikipedia.org/wiki/Auditory_cortex) has a **tonotopic map** — adjacent neurons respond to adjacent frequencies, like a spectrogram laid on cortex.
 
 **🤖 AI-relevance.** Audio ML uses spectrograms because the cochlea does the same thing. Wav2vec / HuBERT representations resemble auditory cortex hierarchy ([Millet et al., 2022](https://arxiv.org/abs/2206.01685)).
 
 ## Somatosensation & the homunculus
 
-Touch maps onto **S1** in a topographic body map (the homunculus, Penfield 1937). Disproportionate cortex for hands, lips, tongue. Plastic — amputees can have face touches felt as the missing hand.
+Touch maps onto **[S1](https://en.wikipedia.org/wiki/Primary_somatosensory_cortex)** in a topographic body map (the homunculus, Penfield 1937). Disproportionate cortex for hands, lips, tongue. Plastic — amputees can have face touches felt as the missing hand.
 
 ## Cross-modal & multimodal integration
 
-The **superior colliculus** integrates vision, audition, touch into spatial maps for orientation. Higher cortical areas (e.g., STS) integrate face + voice. Multimodal integration is increasingly an AI frontier (CLIP, multimodal LLMs).
+The **superior colliculus** integrates vision, audition, touch into spatial maps for orientation. Higher cortical areas (e.g., STS) integrate face + voice. Multimodal integration is increasingly an AI frontier ([CLIP](https://arxiv.org/abs/2103.00020), multimodal LLMs).
 
 ## Sensory coding principles to remember
 
@@ -82,7 +82,7 @@ The **superior colliculus** integrates vision, audition, touch into spatial maps
 2. **Hierarchy.** Receptive fields grow up the stack; invariance increases.
 3. **Sparse coding.** Few neurons fire strongly; most stay quiet.
 4. **Predictive coding.** Higher areas predict; lower areas signal residuals (Ch 13).
-5. **Efficient coding.** [Barlow, 1961](https://en.wikipedia.org/wiki/Efficient_coding_hypothesis) — sensory cortex maximizes information about natural inputs subject to metabolic cost.
+5. **Efficient coding.** [Barlow, 1961](https://doi.org/10.7551/mitpress/9780262518208.003.0011) — sensory cortex maximizes information about natural inputs subject to metabolic cost.
 
 ## Sources
 
