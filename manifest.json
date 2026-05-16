@@ -15,7 +15,9 @@
     {
       "name": "Part II — Foundations of Neuroscience",
       "chapters": [
-        { "id": "02-neuron-biophysics", "title": "The brain, neuroscience & the neuron", "minutes": 60 },
+        { "id": "02a-brain-overview", "title": "The brain at a glance", "minutes": 20 },
+        { "id": "02b-neuroscience-and-ai", "title": "Neuroscience as a field & its relation to AI/ML", "minutes": 25 },
+        { "id": "02c-neuron-biophysics", "title": "The neuron: biophysics & spikes", "minutes": 35 },
         { "id": "03-synapses-plasticity", "title": "Synapses, learning rules & plasticity", "minutes": 45 },
         { "id": "04-neuroanatomy", "title": "Neuroanatomy: the systems-level map", "minutes": 40 },
         { "id": "05-sensory-systems", "title": "Sensory systems: vision, audition, touch", "minutes": 40 },
