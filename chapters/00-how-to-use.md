@@ -7,7 +7,7 @@ You are someone who understands the basics of machine learning, deep learning, a
 - understand neuro-inspired AI papers
 - form your own view on what [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence)/[ASI](https://en.wikipedia.org/wiki/Superintelligence) is missing
 
-This is **not** a neuroscience textbook. It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. This guide is a curated list of articles with links to relevant research papers without a paywall. 
+This is **not** a neuroscience textbook. It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. 
 
 Note that the most productive AI researchers in this space (DeepMind, Numenta, MIT BCS, Stanford, the Mila / Bengio crowd) treat neuroscience as a **source of inductive biases and existence proofs**, not as a target to reverse-engineer. 
 
