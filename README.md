@@ -3,11 +3,12 @@
 A study guide for anyone with AI knowledge who wants to understand the key concepts of neuroscience along with its relevance with AI, and begin to understand the neuro × AI boundary. This is not a deep neuroscience textbook or an AI textbook. Its simply to understand the relevance of the field of neuroscience with AI, and it assumes no prior knowledge of neuroscience.  
 
 It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. 
+The relationship and contributions between neuro and AI are bidirectional, and hence a future study guide will be around how AI contributes to neuroscience. 
 
 ## Why use this study guide
 - Every chapter here is a summary of key neuroscience concepts for a beginner, with a description of its relevance for AI concepts
 - Everything here is summarized from reputed neuroscience books, research papers, with links to the papers for detailed study.
-- Its a much shorter read that the typical textbook, but still focussed on the most fundamental and relevant neuroscience x AI concepts
+- Its a much shorter read that the typical textbook, but broader than any cluster of research papers, and still focussed on the most fundamental and relevant neuroscience x AI concepts
 
 ## Why understand the brain for AI?
 The brain is the only existence proof of general intelligence we have. It runs on a mere ~20 watts whereas AI needs several Megawatts of power! It learns from a handful of examples, generalizes out of distribution, and stays coherent for ~80 years. Modern LLMs match or exceed it on narrow tasks while burning megawatts and hallucinating their own training data. Whatever the brain is doing, we have not reproduced it, even if we have surpassed it in places.
