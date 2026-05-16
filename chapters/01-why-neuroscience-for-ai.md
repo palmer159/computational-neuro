@@ -4,7 +4,7 @@
 
 The brain is the only existence proof of general intelligence we have. It runs on ~20 watts, learns from a handful of examples, generalizes out of distribution, and stays coherent for 80 years. Modern LLMs match or exceed it on narrow tasks while burning megawatts and hallucinating their own training data. Whatever the brain is doing, **we have not reproduced it**, even if we have surpassed it in places.
 
-That is the case for caring. The case for **not** over-caring: planes don't flap. We may build AGI without ever resolving how cortex works. Take from neuroscience what is computationally clarifying; don't be religious about biological plausibility.
+That is the case for caring. The case for **not** over-caring is that we may build AGI without ever resolving how cortex works. Take from neuroscience what is computationally clarifying; don't be religious about biological plausibility.
 
 ## Three honest claims about neuro → AI
 
