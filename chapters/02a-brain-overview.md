@@ -41,6 +41,6 @@ A useful mental model: the brain is a **massively parallel, recurrent, self-modi
 - **Hypothalamus** — drives, homeostasis, hormones — *where wanting comes from*.
 - **Neocortex** — the 6-layer "thinking sheet": vision, language, planning, abstraction, motor commands.
 
-### The neuron, in one paragraph (full chapter starts below)
+### The neuron, in one paragraph
 
 A neuron is an electrically excitable cell with **dendrites** (input branches), a **soma** (cell body that integrates), an **axon** (output wire), and **synapses** where it connects to other neurons. It maintains a voltage across its membrane (~–70 mV at rest) and emits ~1-ms binary pulses (**action potentials** / spikes) when input pushes the voltage past a threshold. Spikes propagate down the axon and trigger chemical signaling at synapses. *That's the unit.*
