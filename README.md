@@ -1,7 +1,19 @@
-# Neuroscience & Computational Neuroscience for AI Researchers
+# Neuroscience and AI - A study guide to understand basics of neuroscience and relevance with AI
 
-A study guide for anyone with CS and AI knowledge who wants to understand the brain well enough to read NeuroAI papers, form an informed view on the parallels or differences of neuroscience concepts with with AI and AGI, and begin to understand the neuro × AI boundary.
+A study guide for anyone with AI knowledge who wants to understand the brain well enough to understand the parallels or relevance of neuroscience concepts with with AI and AGI, and begin to understand the neuro × AI boundary.
+
+## Why this study guide
+Every chapter here is a summary of key neuroscience concepts, with a description of its relevance or divergence with AI concepts
 Everything here is summarized from authoritative open articles and reputed research papers, with links to the papers for detailed study.
+
+## Who this is for
+
+You are someone who understands the basics of machine learning, deep learning, and AI. You know **zero neuroscience**. You want to understand the brain well enough to:
+- relate neuroscience concepts with AI
+- read neuro-inspired AI papers (predictive coding, world models, Hopfield nets, SNNs) without bluffing,
+- form your own view on what AGI/ASI is missing,
+
+This is **not** a neuroscience textbook. It is a high-velocity bridge from Computer science into the parts of neuro that matter for AI research. This guide is a curated list of articles with links to relevant research papers without a paywall. 
 
 ## How to read
 You can browse the entire guide right here on git https://github.com/palmer159/computational-neuro/tree/main/chapters, 
