@@ -4,7 +4,7 @@ A study guide for anyone with AI knowledge who wants to understand the key conce
 The relationship and contributions between neuro and AI are bidirectional, and hence a future study guide will be around how AI contributes to neuroscience. 
 
 ## Why use this study guide
-- Its a much shorter read that the typical textbook, but broader than any cluster of research papers, and still focussed on the most fundamental and relevant neuroscience x AI concepts
+- Its a much shorter read that the typical textbook since it has key conceopts explained succintly, but broader than any single neuro-ai research paper. It is focussed on the most fundamental and relevant neuroscience x AI concepts
 - Every chapter here is a summary of key neuroscience concepts for a beginner, with a description of its relevance for AI concepts
 - Everything here is summarized from reputed neuroscience books, research papers, with links to the papers for detailed study.
 
