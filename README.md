@@ -29,7 +29,7 @@ or choose to run a local web server using the instructions below.
 
 | You have | Read |
 |---|---|
-| 1 weekend | Ch 01, 02, 09, 13, 18, 22, 25 |
+| 1 weekend | Ch 01, 02a, 02b, 02c, 09, 13, 18, 22, 25 |
 | 2 weeks | Part II + Part IV |
 | 1 quarter | All of it, in order |
 | LLM-only | Ch 13, 14, 18, 22, 23, 25 |
@@ -46,7 +46,7 @@ Stdlib only. No build step. No installs.
 
 ## What's here
 
-- `manifest.json` — table of contents (5 parts, 28 chapters).
+- `manifest.json` — table of contents (5 parts, 31 chapters).
 - `chapters/*.md` — one Markdown file per chapter.
 - `index.html` — single-page app: client-side Markdown + Mermaid rendering, sidebar navigation, search.
 - `server.py` — minimal local HTTP server (Python stdlib).

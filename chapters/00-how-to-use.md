@@ -13,7 +13,7 @@ This is **not** a neuroscience textbook. It is a high-velocity bridge from Compu
 
 | You have | Read |
 |---|---|
-| 1 weekend | Ch 01, 02, 09, 13, 18, 22, 25 |
+| 1 weekend | Ch 01, 02a, 02b, 02c, 09, 13, 18, 22, 25 |
 | 2 weeks of evenings | Part II + Part IV |
 | 1 quarter | All of it, in order |
 | Just want LLM-relevance | Ch 13, 14, 18, 22, 23, 25 |
