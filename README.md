@@ -26,7 +26,7 @@ This is **not** a neuroscience textbook. It is a high-velocity bridge from Compu
 
 ## How to read
 You can browse the entire guide right here on git https://github.com/palmer159/computational-neuro/tree/main/chapters, 
-or choose to run a local web server using the instructions below. 
+or choose to run a local web server using the instructions below (some architecture or illustrations will render better). 
 
 ## Design notes
 
