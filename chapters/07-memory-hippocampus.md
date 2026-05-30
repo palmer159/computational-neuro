@@ -31,6 +31,8 @@ The **Complementary Learning Systems** framework (McClelland, McNaughton & O'Rei
 
 📄 [Kumaran, Hassabis & McClelland, 2016 — What learning systems do intelligent agents need?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4920642/) — DeepMind's restatement, explicitly aimed at AI. **Required reading.**
 
+> Kumaran, Hassabis, and McClelland revisit the Complementary Learning Systems framework two decades on and explicitly recast it as a design principle for AI agents. They argue any general intelligence needs both a slow statistical learner (akin to neocortex) for extracting regularities and a fast episodic store (akin to hippocampus) for one-shot encoding of specific experiences. They show that the hippocampus is more flexible than originally proposed — capable of supporting generalization through replay and inference, not merely retrieval — which expands the system's role beyond simple episodic memory. The paper directly motivates DeepMind's use of experience replay in DQN and points toward agents that interleave generative replay with continual updates to avoid catastrophic forgetting. It serves as the explicit bridge between cognitive-science memory theory and the engineering choices in modern deep reinforcement learning.
+
 ```mermaid
 sequenceDiagram
     participant E as Experience

@@ -14,6 +14,8 @@ And a separate distinction between **bottom-up** (stimulus-driven, salient pop-o
 
 📄 [Desimone & Duncan, 1995 — Neural mechanisms of selective visual attention](https://doi.org/10.1146/annurev.ne.18.030195.001205). Multiple stimuli compete for representation; top-down signals from [PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex) bias the competition toward the goal-relevant one. Empirical signature: a [V4](https://en.wikipedia.org/wiki/Visual_cortex) neuron's response to its preferred stimulus is enhanced when attended.
 
+> Desimone and Duncan synthesized two decades of physiology and psychophysics into the "biased competition" model of attention. The core idea is that multiple stimuli within a neuron's receptive field compete for representation, and attention biases this competition by selectively enhancing the goal-relevant input through top-down signals from prefrontal and parietal cortex. They show that a V4 neuron's response to its preferred stimulus is enhanced when that stimulus is attended and suppressed when a competing stimulus is attended instead. The framework unified several previously disparate attention phenomena under a single mechanism — selection through competitive interactions modulated by goal signals. The same query-driven, competitive selection structure later reappeared as the softmax attention operation at the heart of transformer architectures, making this one of the cleanest direct mappings between a cortical mechanism and a modern AI building block.
+
 **🤖 AI-relevance.** Soft attention in transformers is exactly this: query-driven competition resolved by softmax. It's striking how directly the biased-competition motif maps to QKV attention. See Ch 22.
 
 ## Prefrontal cortex: the executive

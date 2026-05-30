@@ -36,6 +36,8 @@ flowchart TD
 
 📄 [Krakauer, Ghazanfar, Gomez-Marin, MacIver & Poeppel, 2017 — Neuroscience needs behavior](https://doi.org/10.1016/j.neuron.2016.12.041). The case that the field over-instrumented and under-theorized; recordings without good behavioral tasks teach you little. **Lesson for AI**: benchmarks shape what models become.
 
+> Krakauer and colleagues argue that neuroscience has been seduced by ever-larger recording technologies while neglecting the careful behavioral analysis that gives neural data its meaning. Their core claim is that you cannot reverse-engineer a computation by recording its substrate alone — you must first specify, at a behavioral level, what the system is doing. They draw on ethology and Marr's tri-level framework to argue that behavior defines the computational problem the brain is solving and therefore constrains what neural mechanisms could possibly explain. The paper warns that "big data" without theory produces correlational maps that resemble explanation without delivering it. For AI researchers the lesson transfers directly: benchmark design shapes which models thrive, and a poorly chosen task masks the absence of the very capability one hopes to measure.
+
 ### Methods you'll see referenced everywhere
 
 | Method | Resolution | What it measures |

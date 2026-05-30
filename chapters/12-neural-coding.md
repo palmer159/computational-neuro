@@ -25,6 +25,8 @@ Information is distributed across **many neurons**. No single neuron is decisive
 
 📄 [Pouget, Dayan & Zemel, 2000 — Information processing with population codes](https://doi.org/10.1038/35039062). Population codes naturally implement **probabilistic** representations — ideal for Bayesian inference (Ch 13).
 
+> Pouget, Dayan, and Zemel argue that population codes — distributed patterns of activity across many neurons — naturally implement probabilistic representations rather than just point estimates of stimulus values. They show that the shape of a population's activity profile encodes uncertainty as well as the stimulus, with broader profiles representing wider posteriors. Crucially, simple operations on population activity — sums, products, normalization — can implement Bayes-optimal cue combination and probabilistic inference without explicit probability calculations. This makes population coding a strong candidate for how cortex performs Bayesian computation in a biologically realistic substrate. The framework anticipates "probabilistic population codes" and connects directly to modern variational inference and probabilistic programming approaches in machine learning, where distributions rather than point estimates drive computation.
+
 Two flavors:
 - **Localist / sparse.** A small set of neurons fire for a given stimulus. Strong evidence in hippocampus (place cells), grandmother-cell debates in IT.
 - **Distributed / dense.** Most neurons participate; identity is in the pattern. Default in cortex. This is what deep learning embeddings are.

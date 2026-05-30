@@ -34,6 +34,8 @@ Real synapses care about **timing**, not just coincidence. If the presynaptic sp
 
 📄 [Bi & Poo, 1998 — Synaptic Modifications in Cultured Hippocampal Neurons](https://www.jneurosci.org/content/18/24/10464) — the canonical STDP curve.
 
+> Bi and Poo paired pre- and postsynaptic spikes at precisely controlled relative timings in cultured hippocampal neurons and measured the resulting change in synaptic strength. They obtained the now-canonical asymmetric STDP curve: pre-before-post pairings within ~20 ms produced potentiation (LTP), while post-before-pre pairings of similar magnitude produced depression (LTD). The effect fell off sharply with timing offsets beyond a few tens of milliseconds, demonstrating that biological synapses are sensitive to spike order at near-millisecond resolution. This established a concrete, biologically grounded learning rule whose mechanism was traceable to NMDA-receptor-dependent calcium dynamics. STDP became the canonical reference point for "local, online, asymmetric" plasticity rules in computational neuroscience and the foil against which biologically plausible alternatives to backpropagation are now compared.
+
 ```
 LTP   ___
        /\

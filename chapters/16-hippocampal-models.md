@@ -49,6 +49,8 @@ $$M(s, s') = \mathbb{E}\left[\sum_{t=0}^\infty \gamma^t \mathbb{1}(s_t = s') \mi
 
 📄 [Stachenfeld, Botvinick & Gershman, 2017 — The hippocampus as a predictive map](https://doi.org/10.1038/nn.4650). Place cells **are** rows of the SR matrix; **grid cells are its eigenvectors**. One of the cleanest unifying results in the field.
 
+> Stachenfeld, Botvinick, and Gershman propose that hippocampal place cells encode the rows of a successor representation (SR) matrix — the expected discounted future state-occupancies under the current policy — rather than instantaneous location. Under this view, place fields naturally distort to favor predictively relevant locations, an asymmetry that matches empirical observations during goal-directed navigation. They further show that grid cells in entorhinal cortex correspond to the principal eigenvectors of the SR, mathematically unifying place cells, grid cells, and the cognitive-map literature within reinforcement-learning theory. The framework explains a host of previously puzzling findings, including why place fields elongate against the direction of travel and why grid scales form a discrete hierarchy. For AI it provides one of the cleanest neuro→ML translations available: a hippocampal mechanism that generalizes value functions across reward changes, directly mirroring successor-feature methods in deep RL.
+
 **🤖 AI-relevance.** Successor features and successor representations are an active area in deep RL ([Barreto et al., 2017](https://arxiv.org/abs/1606.05312)). They give you transferable value functions across reward changes. The neuro story is that the brain may implement them directly.
 
 ## Replay: the bridge to model-based RL

@@ -88,6 +88,8 @@ Neuroscience-informed observations relevant to alignment:
 ## What to actually read for AGI thinking
 
 - [Lake, Ullman, Tenenbaum & Gershman, 2017 — Building machines that learn and think like people](https://arxiv.org/abs/1604.00289). The cognitive-science manifesto.
+
+  > Lake and colleagues argue that even highly capable deep-learning systems differ from human cognition in ways that matter for general intelligence, particularly in sample efficiency, compositional generalization, and causal reasoning. They identify three core "ingredients" they claim are missing from current AI: rich internal models of physics and psychology that support intuitive theories, the ability to learn from very few examples by leveraging compositional structure, and the explicit handling of causal relationships through interventional and counterfactual reasoning. They contrast humans, who can learn new visual concepts from a single example by composing parts and relations, with neural networks that require millions of training examples and still fail to generalize systematically. The paper makes a strong case that scaling alone will not close these gaps and that progress requires building systems with structured priors and causal models. It functions as the cognitive-science manifesto for the AGI debate and is one of the five papers in the recommended "if you only read 5" list for this whole guide.
 - [LeCun, 2022 — A path towards autonomous machine intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf). The architectural-overhaul manifesto.
 - [Hassabis et al., 2017 — Neuroscience-Inspired AI](https://arxiv.org/abs/1709.05206). The DeepMind manifesto.
 - [Bengio, 2017 — The consciousness prior](https://arxiv.org/abs/1709.08568). Workspace-flavored AGI proposal.

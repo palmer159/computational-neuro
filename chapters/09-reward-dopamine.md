@@ -6,6 +6,8 @@ This chapter is the single tightest neuro→AI mapping in existence. If you read
 
 📄 [Schultz, Dayan & Montague, 1997 — A neural substrate of prediction and reward](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf).
 
+> Schultz recorded from midbrain dopamine neurons in monkeys performing Pavlovian conditioning, and Dayan and Montague showed that the firing patterns matched the temporal-difference (TD) prediction error from reinforcement-learning theory point for point. Unexpected rewards produced phasic dopamine bursts; rewards predicted by a learned cue did not, and the burst migrated backward in time onto the predictive cue itself; predicted rewards that were omitted produced a dip below baseline at the expected time. This match between a quantity defined in computer-science RL theory and a directly measured neural signal is one of the strongest convergences ever found between AI and neuroscience. It established the basal ganglia as a biological actor-critic system and gave reinforcement learning a clear neural substrate. Modern deep RL algorithms — A3C, PPO, SAC, AlphaZero — all retain the basic TD-error learning signal whose biological reality this paper established.
+
 They recorded dopamine neurons in monkey [VTA](https://en.wikipedia.org/wiki/Ventral_tegmental_area) during a Pavlovian conditioning task. Three findings:
 
 1. **Unexpected reward** → dopamine burst.

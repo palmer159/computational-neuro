@@ -19,6 +19,8 @@ Already noted in Ch 08. Soft attention — query-driven competition resolved by 
 
 📄 [Ramsauer et al., 2020 — Hopfield Networks is All You Need](https://arxiv.org/abs/2008.02217). Showed softmax attention is exactly equivalent to a continuous (modern) Hopfield network. Hopfield networks are 1980s biological neural-network classics.
 
+> Ramsauer and colleagues prove that the softmax-attention operation at the heart of the transformer is mathematically equivalent to a single update step of a continuous-state ("modern") Hopfield network. They generalize the classical binary Hopfield model to continuous patterns and show that this generalization has exponentially larger storage capacity than the original — sufficient to make it competitive with content-addressable memory in modern AI systems. The equivalence reframes attention as a content-addressable associative memory operation: queries retrieve values weighted by similarity to keys, exactly as a Hopfield network completes patterns from partial cues. This retroactively roots one of the most important architectural innovations in modern AI in 1980s biological neural-network theory. It also opens the door to "Hopfield layers" as a drop-in replacement for memory-style operations in deep architectures, and gives the transformer a clean energy-based, attractor-network reading that the original "Attention Is All You Need" paper did not provide.
+
 So: transformer attention has a clean reading as **content-addressable associative memory**. That is a textbook hippocampus operation.
 
 ### 3. LMs predict language cortex

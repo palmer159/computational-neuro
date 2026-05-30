@@ -15,6 +15,8 @@ None are obviously implementable in cortical hardware. Yet the brain clearly sol
 
 📄 [Lillicrap, Santoro, Marris, Akerman & Hinton, 2020 — Backpropagation and the brain](https://arxiv.org/abs/2004.13316). The status-of-the-field paper. Recommended.
 
+> Lillicrap and co-authors lay out the central question: can the brain implement an algorithm functionally equivalent to backpropagation despite violating its three apparent prerequisites — symmetric weights, distinct forward/backward phases, and non-local error signals? They review candidate mechanisms (feedback alignment, equilibrium propagation, predictive coding, target propagation, dendritic burstprop, three-factor neuromodulated learning) and assess each against biological constraints and scalability evidence. They argue convergent results suggest cortex likely uses some approximation of gradient-based credit assignment built from local rules, with apical dendrites and neuromodulators carrying the necessary signals. The paper emphasizes that this is not a settled question but a tractable research frontier that matters both for explaining the brain and for designing neuromorphic hardware. It is the field's clearest single statement of the credit-assignment problem and the standard reference for anyone working at the boundary between biologically-plausible learning and modern deep learning.
+
 ## Candidate biologically plausible learning rules
 
 ### 1. Feedback alignment (and direct feedback alignment)

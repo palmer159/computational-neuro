@@ -23,6 +23,8 @@ Implications:
 
 📄 [Rao & Ballard, 1999 — Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive field effects](https://doi.org/10.1038/4580). The most-cited single computational theory of cortex.
 
+> Rao and Ballard proposed that visual cortex implements predictive coding: each cortical level generates predictions of the activity at the level below via top-down feedback, and only the residual prediction error is propagated back up. They formalized this as a hierarchical generative model whose inference dynamics minimize prediction error layer by layer through purely local computations. The model quantitatively reproduced a range of "extra-classical" receptive-field effects in V1 — including end-stopping and surround suppression — that had previously required separate ad hoc explanations. By recasting feedforward responses as residuals against a continually updated top-down prediction, they reframed cortex as an active inference engine rather than a passive feature detector. The paper became the most-cited single computational theory of cortex and laid the groundwork for biologically-plausible learning rules that approximate backpropagation using only local error signals — see Whittington & Bogacz (2017).
+
 **The architecture.** Each cortical layer:
 1. Sends a **prediction** (top-down feedback) to the layer below.
 2. Receives a **prediction error** (bottom-up) from the layer below.

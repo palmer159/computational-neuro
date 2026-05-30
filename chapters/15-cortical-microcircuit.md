@@ -9,6 +9,8 @@ This is the cortical analog of the bitter lesson: don't model V1 differently fro
 📄 [Mountcastle, 1997 — The columnar organization of the neocortex](https://doi.org/10.1093/brain/120.4.701).
 📄 [Douglas & Martin, 2004 — Neuronal circuits of the neocortex](https://doi.org/10.1146/annurev.neuro.27.070203.144152). Best summary of the canonical-microcircuit hypothesis.
 
+> Douglas and Martin synthesized decades of anatomical and physiological data into the canonical-microcircuit hypothesis: a stereotyped six-layer wiring pattern that, with minor variations, recurs across all of neocortex. Thalamic input enters at layer 4, propagates upward to layers 2/3 for cortico-cortical communication, then to layer 5 for output to subcortical targets, while layer 6 closes the corticothalamic feedback loop. The circuit features strong recurrent excitation among pyramidal cells balanced by fast local inhibition from interneuron classes that gate gain, timing, and plasticity. Their central claim is that despite vast functional differences between V1, M1, A1, and PFC, the underlying circuit blueprint is essentially the same — implying one canonical algorithm that learning and input shape into different specialties. This "one-algorithm" hypothesis is the central bet of much modern NeuroAI, motivating attempts to identify a single learning rule (predictive coding, sparse coding, attractor dynamics) that the cortex executes everywhere.
+
 ## The wiring (rough)
 
 ```mermaid

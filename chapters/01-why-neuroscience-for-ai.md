@@ -51,6 +51,8 @@ flowchart LR
 - **Free course:** [Neuromatch Academy — Computational Neuroscience](https://compneuro.neuromatch.io/) — Python-first, taught by leading researchers, runs every summer.
 - **Free course:** [Neuromatch — Deep Learning](https://deeplearning.neuromatch.io/) — its sibling course, neuro-flavored.
 - **Survey:** [Hassabis et al., 2017 — Neuroscience-Inspired AI](https://arxiv.org/abs/1709.05206) — the DeepMind manifesto for this whole field.
+
+  > Hassabis, Kumaran, Summerfield & Botvinick survey how neuroscience has historically inspired AI breakthroughs and argue it should continue to guide the next generation. They review four areas where the cross-pollination has been productive: deep learning's debt to visual cortex, reinforcement learning's roots in dopamine research, attention mechanisms inspired by biological selection, and episodic memory's debt to hippocampal replay. They argue the brain remains the only existence proof of general intelligence and offers concrete inductive biases for capabilities AI still lacks. Specific gaps highlighted include continual learning, efficient learning from few examples, transfer learning, structured reasoning, imagination, and grounded virtual brains. The piece functions as DeepMind's manifesto for treating neuroscience as a strategic source of architectural ideas rather than a curiosity.
 - **Survey:** [Richards et al., 2019 — A deep learning framework for neuroscience](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7115933/) — the inverse direction.
 
 ## How to read this part of the guide skeptically

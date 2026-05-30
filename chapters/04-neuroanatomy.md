@@ -81,6 +81,8 @@ flowchart LR
 
 📄 [McClelland, McNaughton & O'Reilly, 1995 — Why there are complementary learning systems](https://en.wikipedia.org/wiki/Catastrophic_interference) — the **[CLS](https://en.wikipedia.org/wiki/Catastrophic_interference)** (Complementary Learning Systems) framework. Direct ancestor of replay-buffer ideas in deep [RL](https://en.wikipedia.org/wiki/Reinforcement_learning).
 
+> McClelland, McNaughton & O'Reilly proposed that mammalian memory cannot use a single learning system because of a hard tradeoff: fast one-shot encoding causes catastrophic interference with prior knowledge, while slow distributed learning enables generalization but cannot store specific episodes. They argued the brain resolves this by having two complementary systems — a fast hippocampus that encodes individual episodes sparsely and a slow neocortex that gradually extracts statistical regularities. Crucially, they predicted that the hippocampus replays its stored episodes back to neocortex during offline periods like sleep, allowing the slow system to interleave new and old experiences without forgetting. This "interleaved learning via replay" is the direct conceptual ancestor of experience replay in deep reinforcement learning. The framework remains one of the most influential bridges between neuroscience and AI, used to motivate everything from DQN's replay buffer to modern continual-learning algorithms.
+
 ## Connectomes: the wiring diagram
 
 - **C. elegans** — 302 neurons, fully mapped ([WormAtlas](https://www.wormatlas.org/)).

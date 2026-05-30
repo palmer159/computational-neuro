@@ -28,6 +28,8 @@ A useful mental model: the brain is a **massively parallel, recurrent, self-modi
 
 📄 [Herculano-Houzel, 2009 — The human brain in numbers: a linearly scaled-up primate brain](https://www.frontiersin.org/articles/10.3389/neuro.09.031.2009/full). Authoritative source for the 86-billion-neuron figure (revising the long-cited 100B).
 
+> Herculano-Houzel introduced the **isotropic fractionator**, a method that dissolves brain tissue into a homogeneous nuclear suspension that can be counted directly, replacing decades of indirect stereological estimates. Applying it to the human brain yielded ~86 billion neurons total — about 16 billion in the cerebral cortex and a striking 69 billion in the cerebellum. The previously textbook figure of 100 billion neurons turned out to be a casual estimate that had ossified into accepted fact for over half a century. She also showed that the human brain follows the same neuron-density scaling rules as other primate brains, contradicting the older claim that humans are evolutionary outliers in cellular composition. The result reframes "what makes humans special" away from raw neuron count and toward connectivity, cortical organization, and developmental trajectory.
+
 📄 [Sterling & Laughlin — Principles of Neural Design (2015)](https://direct.mit.edu/books/oa-monograph/4128/Principles-of-Neural-Design). Best argument that **energy efficiency is the dominant constraint** shaping brain architecture — a constraint AI accelerators do not face the same way.
 
 ### The hierarchical layout (preview of Ch 04)

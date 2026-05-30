@@ -26,6 +26,8 @@ Two streams (Mishkin & Ungerleider, 1982):
 
 📄 [Hubel & Wiesel, 1962 — Receptive fields, binocular interaction, and functional architecture in the cat's visual cortex](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/). Nobel Prize 1981. They recorded from cat V1 and found:
 
+> Hubel and Wiesel inserted microelectrodes into anesthetized cat primary visual cortex and discovered neurons whose receptive fields are tuned to specific edge orientations and positions, not to spots of light. They distinguished "simple cells" with phase-sensitive oriented receptive fields from "complex cells" that retain orientation tuning while becoming increasingly position-invariant. They further showed that V1 neurons are organized into orientation columns and ocular-dominance columns, revealing a topographic, modular cortical architecture. The finding that vision is built from a hierarchy of progressively more complex and invariant feature detectors became the conceptual blueprint for convolutional neural networks. Their Nobel-winning work is the strongest historical example of a neuroscience discovery directly shaping the design of an entire AI architecture family.
+
 - **Simple cells** respond to oriented edges at specific positions.
 - **Complex cells** respond to oriented edges, more position-invariant.
 - Cells are organized in columns by orientation preference.
@@ -38,6 +40,8 @@ This is a CNN. The architecture of LeCun's 1989 LeNet — local receptive fields
 V1 simple cells are well-modeled as oriented Gabor filters. A trained CNN's first layer learns Gabor-like filters spontaneously. This is one of the field's most-cited convergences.
 
 📄 [Olshausen & Field, 1996 — Emergence of simple-cell receptive field properties by learning a sparse code for natural images](https://www.rctn.org/bruno/papers/sparse-coding.pdf). Sparse coding on natural images yields V1-like Gabors. The earliest demonstration that **the brain's representations may follow from optimizing simple objectives on natural data**, not from hand-crafted biology.
+
+> Olshausen and Field trained a linear generative model on patches of natural images under a single constraint — that only a small fraction of basis units should be active for any given image. The optimal basis functions that emerged spontaneously were oriented, localized, bandpass filters that closely match the receptive fields of V1 simple cells. This was the first computational demonstration that V1's signature representational properties could be derived from a simple objective (sparse, efficient coding) applied to natural-image statistics, rather than hand-crafted into the architecture. The result revived efficient-coding ideas tracing back to Barlow and reframed cortical representations as solutions to optimization problems. Three decades later, sparse autoencoders descended from this very framework have become the dominant tool for mechanistic interpretability of large language models — making this a 1996 neuroscience paper that now anchors interpretability research at frontier AI labs.
 
 ### IT cortex ≈ trained CNN top layer
 

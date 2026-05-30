@@ -46,6 +46,8 @@ This is consequential: the same neural machinery for remembering and for imagini
 
 📄 [LeCun, 2022 — A path towards autonomous machine intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf). Argues the missing piece for [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) is hierarchical predictive world models, with planning at multiple time scales. Brains are the existence proof.
 
+> LeCun proposes that the missing ingredient for autonomous machine intelligence is a hierarchical predictive world model trained primarily by self-supervised learning at multiple levels of abstraction and time scales. He argues that next-token prediction on text alone cannot produce true understanding, and instead advocates for joint-embedding predictive architectures (JEPA) that predict abstract representations of future states rather than reconstructing raw observations. The proposed architecture comprises six modules — perception, world model, actor, cost, configurator, short-term memory — that together support imagination, planning, and goal-directed action through hierarchical action sequences. He explicitly invokes the brain as an existence proof: any architecture that hopes to match human general intelligence must include a hierarchical world model and active planning over it. The paper functions as the architectural-overhaul manifesto of the NeuroAI camp and contrasts sharply with the "scale + sloppy bio inspiration" bet driving most current frontier-LLM work.
+
 ## Planning: tree search vs amortized inference
 
 Two regimes of model use:

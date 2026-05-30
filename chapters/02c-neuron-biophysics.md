@@ -49,6 +49,8 @@ A naive view: dendrites sum inputs linearly, soma decides. Real view: dendrites 
 
 📄 [Beniaguev, Segev & London, 2021 — Single cortical neurons as deep ANNs](https://doi.org/10.1016/j.neuron.2021.07.002) — they fit a deep (5–8 layer) network to match a single L5 pyramidal neuron's I/O. Sobering.
 
+> The authors simulated a detailed biophysical model of a layer-5 pyramidal neuron driven by realistic synaptic input, then asked how deep an artificial neural network must be to predict the neuron's spike output millisecond by millisecond. They found that a temporally-convolutional network with 5–8 hidden layers and roughly 1,000 units was required to reach high fidelity, with NMDA-driven dendritic nonlinearities being the key feature responsible for that depth. Removing NMDA channels collapsed the required network to a much shallower model, isolating the source of the computational complexity. The result is the strongest single argument that the conventional "1 ANN unit ≈ 1 biological neuron" identification understates a real neuron's computational power by 2–3 orders of magnitude. It complicates pure neuron-counting comparisons between brains and large language models and motivates research into dendritic computation as an underused source of expressive depth.
+
 **🤖 AI-relevance.** This paper is the strongest single argument that "1 ANN unit ≈ 1 neuron" is wrong by 2–3 orders of magnitude. Pure scaling debates often skip this.
 
 ## Neuron types you'll hear named
