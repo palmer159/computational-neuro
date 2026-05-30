@@ -37,6 +37,8 @@ The mapping in Ch 20: [PFC](https://en.wikipedia.org/wiki/Prefrontal_cortex) + D
 
 Speculative. Both impose a sinusoidal/Fourier-like structural prior on a learned space. [Whittington et al., 2022 — Relating transformers to models and neural representations of the hippocampal formation](https://arxiv.org/abs/2112.04035) makes this case explicitly: a transformer with a particular positional encoding maps to the Tolman-Eichenbaum Machine (Ch 16).
 
+> Whittington and colleagues prove a formal correspondence between transformers and the Tolman-Eichenbaum Machine (TEM) — a neuroscience-grounded model of hippocampal-entorhinal computation. They show that with appropriate positional encodings and a particular weight-tying scheme, a transformer's hidden states map onto place-cell-like representations and the positional encodings onto grid-cell-like representations. The transformer trained on TEM-style data spontaneously develops grid-cell and place-cell signatures matching biological recordings. This bridges modern AI architectures with hippocampal computation, suggesting that one of AI's most successful inventions may share computational structure with one of the brain's most studied circuits. The paper is a striking instance of bidirectional translation between fields and motivates research into memory-augmented transformers as biologically-grounded substrates for episodic and relational reasoning.
+
 ## Where transformers and brains diverge
 
 - **No recurrence** at the architectural level (in standard transformers). Brains are massively recurrent.
@@ -59,6 +61,8 @@ The interesting question for AI: which **inductive biases** of cortex (recurrenc
 ## Worth keeping an eye on
 
 - **State space models / Mamba** ([Gu & Dao, 2023](https://arxiv.org/abs/2312.00752)) — recurrent, state-tracking, more cortical-feeling than transformers.
+
+  > Gu and Dao introduced Mamba, a selective state-space model that processes sequences with linear (rather than quadratic) complexity in sequence length while matching transformer performance on language tasks. The architecture is a structured recurrent network with input-dependent state transitions, allowing the model to selectively retain or discard information from arbitrarily long contexts. Mamba is more "cortical-feeling" than transformers in that it is genuinely recurrent, processes sequences causally and incrementally, and maintains a compressed running state rather than re-attending to all past tokens at every step. Empirically, it matches or beats transformers on language modeling, audio, and genomics benchmarks at the same parameter count, while being far cheaper at long contexts. The architecture suggests recurrence and state tracking — both ubiquitous in cortex — are not handicaps for AI but viable design choices that may scale better than attention for some workloads.
 - **Hyena, RWKV, RetNet** — alternative attention-replacements with closer biological analogs.
 - **Diffusion models** — iterative refinement, energy-based, predictive-coding-flavored.
 - **Memory-augmented transformers** — explicit hippocampus-like memory ([MEMIT](https://memit.baulab.info/), [MemGPT](https://memgpt.ai/), [Titans](https://arxiv.org/abs/2501.00663)).

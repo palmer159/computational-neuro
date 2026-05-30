@@ -39,6 +39,8 @@ Grid cells in medial entorhinal cortex fire on a hexagonal lattice. Multiple gri
 
 📄 [Banino et al., 2018 — Vector-based navigation using grid-like representations in artificial agents](https://doi.org/10.1038/s41586-018-0102-6). Train an agent on path integration with a generic [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network); grid-like units emerge. **AI predicts neuro again.**
 
+> Banino and colleagues at DeepMind trained a recurrent neural network to perform path integration — predicting position from a sequence of velocity inputs — and found that hexagonal grid-like units spontaneously emerged in the network's hidden layer. The grid units shared the key properties of biological grid cells: hexagonal lattice firing fields, multiple discrete spatial scales, and stable preferred orientations. Adding the grid representation enabled vector-based goal-directed navigation, including taking shortcuts through unfamiliar terrain — behaviors previously associated with hippocampal cognitive maps. The result mirrored Yamins-style convergence in vision: networks optimized for an ecological task spontaneously develop cortex-like representations as a side effect. It is one of the cleanest cases where AI predicted neuroscience, demonstrating that grid cells follow naturally from path-integration computation rather than requiring explicit hexagonal priors.
+
 ## Successor representations: the Rosetta stone
 
 A representation of state $s$ as the **expected discounted future occupancy** of all other states under the current policy:
@@ -63,11 +65,15 @@ Hippocampal sharp-wave ripples reactivate trajectories — forward, reverse, eve
 
 📄 [Mattar & Daw, 2018 — Prioritized memory access explains planning and hippocampal replay](https://www.princeton.edu/~ndaw/md18.pdf). Replay statistics are well-fit by **prioritized sweeping** — the brain replays experiences whose updates have the most expected value. Tight neuro→ML mapping.
 
+> Mattar and Daw derived a normative theory of hippocampal replay: which experience the brain should replay at any moment is the one whose memory access produces the largest expected improvement in future behavior. They formalized this as a product of two terms — "need" (how often the state will be visited) and "gain" (how much the value update would change behavior). Fitting this to hippocampal replay data, they showed it accounts for empirical patterns far better than random replay or simple recency: forward replay before decisions, reverse replay after rewards, and replay at choice points all fall out of the prioritization rule. The framework provides a principled neuroscience grounding for prioritized experience replay in deep RL and unifies replay, planning, and memory consolidation under a single optimization objective. It is one of the tightest neuro→ML mappings in current research and a model of how computational theory and biological data can mutually constrain each other.
+
 📄 [Wittkuhn, Krippner, Koch & Schuck, 2024 — Replay in humans during fast offline planning](https://doi.org/10.1038/s41586-024-07675-8) — fast (~50 ms) sequential reactivation in humans during decision-making.
 
 ## Tolman-Eichenbaum Machine ([TEM](https://doi.org/10.1016/j.cell.2020.10.024))
 
 📄 [Whittington, Muller, Mark, Chen, Barry, Burgess & Behrens, 2020 — The Tolman-Eichenbaum Machine: unifying space and relational memory through generalization in the hippocampal formation](https://doi.org/10.1016/j.cell.2020.10.024). A neural network model that derives place cells, grid cells, and relational generalization from a single self-supervised objective. Pure NeuroAI: explicitly designed to explain neural data and to compute non-trivially.
+
+> Whittington and colleagues built the Tolman-Eichenbaum Machine (TEM), a neural network that learns to factor experience into a slowly varying structural component (e.g., the geometry of a maze) and a fast-changing content component (which objects are at which locations). The model is trained by self-supervised next-observation prediction with a memory module that combines structural and content codes. As the network learns, units in the structural module spontaneously develop grid-cell-like properties and units in the memory module develop place-cell-like properties — directly recovering the empirical signatures of entorhinal and hippocampal coding. Crucially, TEM generalizes to novel environments by reusing structural knowledge across content, mirroring relational generalization observed in animals and humans. The paper is one of the most successful examples of pure NeuroAI: a model designed jointly to explain neural data and to perform a non-trivial computation, and it has since been linked to transformer architectures in Whittington et al. (2022).
 
 **🤖 AI-relevance.** TEM and successor-representation models are one of the most active interfaces between neuroscience and AI right now, and a great research topic for someone like you.
 

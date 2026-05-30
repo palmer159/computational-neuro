@@ -16,11 +16,15 @@ Three theories dominate. They are not mutually exclusive.
 
 **🤖 AI-relevance.** [Goyal & Bengio, 2022 — Inductive biases for higher-cognition AI](https://arxiv.org/abs/2011.15091) and [VanRullen & Kanai, 2021 — Deep learning and the Global Workspace Theory](https://arxiv.org/abs/2012.10390) are explicitly GWT-inspired AI architectures. The transformer's "[[CLS](https://en.wikipedia.org/wiki/Catastrophic_interference)] token broadcasts over residual stream" structure is loosely workspace-shaped.
 
+> Goyal & Bengio (2022) propose a set of inductive biases — sparsity, causal modularity, attention bottlenecks, factored representations — that they argue are necessary for higher-level cognition and explicitly motivate from cognitive science and global workspace theory. Their proposal frames AGI architectures as needing a discrete, low-bandwidth communication channel through which specialist modules share information — the same bottleneck GWT identifies in the brain. VanRullen & Kanai (2021) build a more direct architectural translation, showing how deep learning systems with explicit workspace modules can integrate vision, language, and action across modalities through a shared latent space. Their architecture demonstrates that a learned shared workspace can coordinate disparate specialist networks much like the prefrontal-parietal workspace coordinates cortical specialists in the brain. Together these papers represent the most concrete attempts to translate Global Workspace Theory into deep-learning architectures and motivate research on attention bottlenecks, hub-and-spoke designs, and modular AGI proposals.
+
 ## Integrated Information Theory (IIT)
 
 **The bet.** Consciousness = integrated information (Φ). A system is conscious to the extent its parts cannot be partitioned without losing information.
 
 📄 [Tononi, Boly, Massimini & Koch, 2016 — Integrated information theory: from consciousness to its physical substrate](https://www.eecs.qmul.ac.uk/~mpurver/papers/tononi-etal-iit.pdf).
+
+> Tononi and colleagues lay out Integrated Information Theory (IIT), which proposes that consciousness corresponds to integrated information (Φ) — the amount of information a system specifies about itself that is irreducible to information specified by its parts. IIT begins with phenomenological axioms (consciousness exists, is structured, integrated, definite, and informative) and translates each into postulates that physical systems must satisfy to be conscious. The theory makes counterintuitive predictions: feedforward networks have Φ ≈ 0 regardless of behavioral capability; the cerebellum, despite its 69 billion neurons, contributes little to consciousness because of its modular feedforward architecture; and behavioral equivalence does not entail consciousness. For AI this means scaling transformer architectures may not produce phenomenal consciousness even at superhuman capability. The theory remains contested — a 2023 letter signed by 124 researchers labeled it pseudoscience — but it is essential reading for anyone reasoning about machine consciousness, model welfare, or the moral status of AI systems.
 
 **Implications you should know.**
 - IIT predicts that **feedforward** systems (most of current deep learning) are non-conscious regardless of capability.
@@ -41,6 +45,8 @@ Variants: HOR (representation), HOP (perception), HOMT (monitoring/meta-thought)
 ## The 2023 adversarial collaboration
 
 📄 [Melloni, Mudrik, Pitts, Bendtz, Ferrante, Gorska, ..., Tononi, Koch, Dehaene, Lau, 2023 (Cogitate consortium) — preregistered adversarial test of IIT vs GWT](https://doi.org/10.1038/s41586-025-08888-1). Both theories made predictions, neither came out cleanly winning. The status quo: the science is genuinely unsettled.
+
+> The Cogitate consortium ran a preregistered adversarial collaboration in which proponents of IIT and Global Workspace Theory committed in advance to predictions about which brain signatures would distinguish conscious from unconscious processing during a face/object perception task. The team collected fMRI, MEG, and intracranial recordings from over 250 participants across multiple labs and tested the predictions blindly. Neither theory emerged as the clear winner: each prediction was partially confirmed and partially falsified, with location and timing of conscious-state signatures matching neither theory cleanly. The result demonstrates both that the science of consciousness is genuinely unsettled and that adversarial collaboration is a viable methodology for advancing contested theoretical questions. For AI, the broader implication is that confident claims about whether any specific architecture is or is not conscious cannot rely on settled neuroscience — the empirical record itself does not yet decisively favor any framework.
 
 ## Behavioral correlates: the Neural Correlates of Consciousness
 

@@ -23,6 +23,8 @@ None are obviously implementable in cortical hardware. Yet the brain clearly sol
 
 📄 [Lillicrap, Cownden, Tweed & Akerman, 2016 — Random synaptic feedback weights support error backpropagation for deep learning](https://arxiv.org/abs/1411.0247). Replace $W^T$ in the backward pass with **random fixed** weights $B$. The forward weights still align well enough during training to give learning. Works on small problems, struggles on big ones.
 
+> Lillicrap and colleagues showed the surprising result that backpropagation does not require the backward pass to use the transpose of the forward weights — random fixed feedback weights work nearly as well on small problems. During training, the forward weights spontaneously evolve to "align" with the random feedback matrices in a way that delivers usable error signals, dissolving one of the strongest biological objections to backprop (the symmetric-weights problem). The mechanism, called "feedback alignment," provides a proof of concept that biologically plausible local rules can approximate gradient learning without architectural symmetry constraints. The result was an early breakthrough in the biologically-plausible-learning literature and inspired direct feedback alignment, sign-symmetric learning, and other variants. Subsequent work showed feedback alignment struggles on larger architectures like deep CNNs, motivating the more elaborate predictive-coding and burstprop alternatives that followed.
+
 Removes the symmetric-weights problem. Doesn't fully scale.
 
 ### 2. Equilibrium propagation
@@ -33,6 +35,8 @@ Removes the symmetric-weights problem. Doesn't fully scale.
 
 📄 [Whittington & Bogacz, 2017 — An approximation of the error backpropagation algorithm in a predictive coding network with local Hebbian synaptic plasticity](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5467749/). A predictive-coding hierarchy with prediction-error neurons that, with local Hebbian updates, reproduces backprop arithmetic. Beautiful result.
 
+> Whittington and Bogacz showed analytically that a hierarchical predictive-coding network with separate "value" and "error" neurons at each level, updated by purely local Hebbian-like rules, performs computations that closely approximate backpropagation. The key insight is that prediction errors propagated through the local network architecture serve the role of the gradient signals normally computed by backprop's chain rule. Every required computation reduces to neuron-local arithmetic, removing the symmetric-weight problem and the non-locality problem in one stroke. They demonstrated empirically that predictive-coding networks match backprop performance on standard supervised benchmarks while remaining biologically plausible. The paper is one of the cleanest mathematical results connecting cortex-style local learning to deep-learning gradient methods and a foundational reference for any biologically plausible scaling work.
+
 📄 [Millidge, Tschantz & Buckley, 2022 — Predictive coding approximates backprop along arbitrary computation graphs](https://arxiv.org/abs/2202.09467). Generalizes the result.
 
 **🤖 AI-relevance.** Predictive coding may be the **best current candidate** for "what cortex does that gives backprop-like learning." Increasingly relevant beyond neuroscience as a candidate replacement for backprop on neuromorphic hardware.
@@ -40,6 +44,8 @@ Removes the symmetric-weights problem. Doesn't fully scale.
 ### 4. Burstprop / Dendritic learning
 
 📄 [Payeur, Guerguiev, Zenke, Richards & Naud, 2021 — Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits](https://doi.org/10.1038/s41593-021-00857-x). Pyramidal neurons emit two distinct signals — single spikes (forward) and bursts (error). Apical and basal dendrites separate forward and feedback streams. A neurally grounded version of backprop credit assignment.
+
+> Payeur and colleagues built a learning rule grounded in the empirical observation that cortical pyramidal neurons can emit either single spikes or high-frequency bursts, and that these two output modes carry distinct information. In their model, single spikes propagate the forward signal while bursts encode error or teaching signals, with apical dendrites receiving top-down feedback that triggers bursting based on prediction error. The framework cleanly separates forward and feedback streams onto different dendritic compartments of the same cell, removing the symmetric-weight problem while remaining anatomically plausible. The model trains deep cortical-like networks on benchmark tasks with performance approaching standard backprop, while every learning rule used is local and biologically realistic. It is one of the most physiologically grounded biologically plausible learning rules to date and a strong candidate for what cortex actually does.
 
 ### 5. Target propagation
 

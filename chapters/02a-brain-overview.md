@@ -32,6 +32,8 @@ A useful mental model: the brain is a **massively parallel, recurrent, self-modi
 
 📄 [Sterling & Laughlin — Principles of Neural Design (2015)](https://direct.mit.edu/books/oa-monograph/4128/Principles-of-Neural-Design). Best argument that **energy efficiency is the dominant constraint** shaping brain architecture — a constraint AI accelerators do not face the same way.
 
+> Sterling & Laughlin argue that nervous systems are built around a single overriding constraint — minimizing energy cost per bit of information processed — and use this lens to explain otherwise puzzling features of neural architecture. They show that decisions like axon diameter, synapse count, neuron firing rates, sparse coding, and the choice between graded and spike-based signaling all reduce to optimization under metabolic limits. The book documents how natural selection has tuned biological circuits to operate near information-theoretic efficiency bounds at every scale, from single ion channels to whole brain regions. They contrast this with engineered AI systems that face no comparable constraint, often consuming six orders of magnitude more energy per inference than biological equivalents. The implication for AI is sharp: biological algorithms come pre-optimized for energy efficiency, and porting them to silicon may unlock orders-of-magnitude efficiency gains for edge and embedded deployment.
+
 ### The hierarchical layout (preview of Ch 04)
 
 - **Brainstem** — keeps you alive: breathing, heart rate, sleep/wake, arousal, autonomic regulation. Houses most of the **neuromodulatory nuclei** (dopamine, noradrenaline, serotonin, acetylcholine).

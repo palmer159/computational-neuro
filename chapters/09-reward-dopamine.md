@@ -41,6 +41,8 @@ The dominant computational interpretation:
 
 Read: [Frank, 2005 — Dynamic dopamine modulation in the basal ganglia](https://doi.org/10.1162/0898929052880093).
 
+> Frank built a computational model of the basal ganglia in which dopamine differentially modulates the direct ("Go") and indirect ("No-Go") pathways through D1 and D2 receptors, and showed how this dual modulation implements an actor-critic-style action selection mechanism. The model accounts for behavioral and clinical phenomena: Parkinson's patients (low dopamine) over-rely on No-Go learning and become risk-averse, while medicated patients (high dopamine) over-rely on Go learning and develop impulsivity. Bursts of dopamine reinforce the Go pathway for selected actions while dips strengthen the No-Go pathway against unrewarded alternatives. The framework concretely operationalizes how phasic dopamine signals shape policy through opponent striatal circuits. It is the canonical computational model of basal-ganglia function and remains the standard reference for actor-critic interpretations of reinforcement learning in the brain.
+
 **🤖 AI-relevance.** Actor-critic algorithms (A2C, A3C, SAC, [PPO](https://en.wikipedia.org/wiki/Proximal_policy_optimization)) are the closest computational framework we have to a working [BG](https://en.wikipedia.org/wiki/Basal_ganglia) model. The mapping is not loose — Schultz, Sutton, Barto, Doya, Dayan, Montague all crossed the bridge.
 
 ## Model-free vs model-based: the two RL systems
@@ -52,11 +54,15 @@ Behavioral data suggests animals (and humans) use both:
 
 📄 [Daw, Niv & Dayan, 2005 — Uncertainty-based competition between prefrontal and dorsolateral striatal systems](https://www.princeton.edu/~ndaw/dnd05.pdf). Brain arbitrates between systems based on which one is more confident.
 
+> Daw, Niv, and Dayan formalized the model-free / model-based dichotomy in reinforcement learning and proposed that the brain arbitrates between them based on each system's uncertainty about its own predictions. Model-based control (slow, flexible, hippocampus + dmPFC) dominates when the world model is well-known but cached values are stale; model-free control (fast, habitual, dorsolateral striatum) dominates when cached values are reliable but the model is uncertain. The framework predicts when humans should use deliberation versus habit and successfully accounts for behavioral data on automaticity and the transition from goal-directed to habitual control with overtraining. It also explains a range of clinical phenomena including OCD and addiction as failures of arbitration between the two systems. The paper is the canonical reference for hybrid RL in the brain and directly informs modern AI architectures like Dyna, AlphaZero, and MuZero that combine learned models with cached value estimates.
+
 **🤖 AI-relevance.** Modern AI converges: AlphaZero uses model-based [MCTS](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search) with model-free value learning. Dyna and successor representations bridge the two. The brain may be running a similar hybrid.
 
 ## Distributional RL in dopamine neurons
 
 📄 [Dabney, Kurth-Nelson, Uchida, Starkweather, Hassabis, Munos & Botvinick, 2020 — A distributional code for value in dopamine-based reinforcement learning](https://arxiv.org/abs/1707.06887). DeepMind + Harvard. Different dopamine neurons have different optimism levels — they collectively encode the **distribution** of returns, not just the mean.
+
+> Dabney and colleagues, building on the distributional reinforcement-learning framework that DeepMind introduced in 2017, predicted that if the brain implements distributional RL, then individual dopamine neurons should show heterogeneous optimism levels — each tuned to a different quantile of the value distribution. They tested this directly in mouse VTA recordings and confirmed it: dopamine neurons differ systematically in how strongly they respond to positive versus negative prediction errors, with each neuron's "asymmetry" predicting which quantile it represents. The population collectively encodes the full distribution of future returns rather than just the expected value. This is one of the rare cases where AI predicted neuroscience: the distributional algorithm was developed for ML, then confirmed in dopamine recordings years later. The result both vindicates distributional RL as a biologically realized algorithm and gives the brain a richer representation of uncertainty than the standard scalar TD-error account allowed.
 
 Distributional RL was proposed in ML first ([Bellemare, Dabney & Munos, 2017](https://arxiv.org/abs/1707.06887)). The neuro confirmation came later. **AI predicted neuroscience** here. This is rare and noteworthy.
 

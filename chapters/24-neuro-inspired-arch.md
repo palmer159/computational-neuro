@@ -44,9 +44,13 @@ Practical use cases: neuromorphic hardware, on-device continual learning, energy
 
 📄 [Sabour, Frosst & Hinton, 2017 — Dynamic routing between capsules](https://arxiv.org/abs/1710.09829). Hinton's attempt at viewpoint-invariant, parts-and-wholes-aware vision. Loose biological inspiration (cortical microcolumns, viewpoint reference frames). Has not displaced CNNs; lives on in occasional follow-ups.
 
+> Sabour, Frosst, and Hinton introduced capsule networks, in which groups of neurons ("capsules") jointly encode the presence, pose, and viewpoint of visual entities, with dynamic routing-by-agreement determining which lower-level capsules contribute to which higher-level capsules. The architecture was inspired by Hinton's long-standing argument that vision must explicitly represent part-whole hierarchies and viewpoint reference frames, drawing loose analogy to cortical columns and the parts-and-wholes structure of cortex. CapsNets achieved competitive performance on small benchmarks while showing better viewpoint generalization than CNNs of similar size. The architecture has not displaced convolutional or transformer-based vision systems, but variants and follow-ups have continued to explore part-based representations. The paper remains an important worked example of biology-inspired architectural design, even if the empirical case for capsules at scale has not materialized.
+
 ## Liquid neural networks / continuous-time
 
 📄 [Hasani et al., 2021 — Liquid time-constant networks](https://arxiv.org/abs/2006.04439). Continuous-time [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network) with input-dependent time constants — closer to biophysics. Works well on small robotics tasks.
+
+> Hasani and colleagues introduced Liquid Time-constant (LTC) networks, continuous-time recurrent networks in which each neuron's time constant depends on its input, mirroring how biological neurons modulate their integration timescales based on synaptic activity. The architecture is closer to biophysical neuron models than standard RNNs, with dynamics governed by a system of nonlinear ordinary differential equations rather than discrete updates. The networks proved compact and expressive on small robotics control tasks — outperforming much larger LSTMs and transformers on autonomous driving with as few as nineteen neurons. They are also relatively interpretable because each neuron has explicit dynamics that can be analyzed mathematically. The paper is one of the most successful recent examples of biophysics-inspired architecture and has driven renewed interest in continuous-time neural networks for embedded and edge applications.
 
 ## Hierarchical Temporal Memory (Numenta)
 

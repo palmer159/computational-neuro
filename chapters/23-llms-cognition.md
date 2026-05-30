@@ -60,7 +60,12 @@ This is consequential for AI: if language is a communication interface, then a s
 ## Theory of mind in LLMs
 
 📄 [Kosinski, 2024 — Evaluating large language models in theory of mind tasks](https://arxiv.org/abs/2302.02083). LLMs pass classic false-belief tasks at [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)-4 level.
+
+> Kosinski tested a range of LLMs on classic theory-of-mind tasks, including false-belief problems used to assess young children, and found that GPT-4-class models pass them at near-adult human levels. The performance scaled with model size, with smaller models failing reliably and larger ones succeeding, suggesting theory-of-mind-like behavior emerges from scale and pretraining rather than explicit training on the tasks. Kosinski argued this shows LLMs have developed something functionally similar to theory of mind without being designed for it. The result is one piece of the broader debate about whether LLMs genuinely understand other minds or merely pattern-match to surface features of the test stimuli — a question Ullman (below) directly attacks. The paper anchored the "LLMs have ToM" side of the debate.
+
 📄 [Ullman, 2023 — Large Language Models Fail on Trivial Alterations to Theory-of-Mind Tasks](https://arxiv.org/abs/2302.08399). Same tasks slightly perturbed → failure. Shows LLM ToM is fragile.
+
+> Ullman ran the same false-belief tasks Kosinski used but introduced trivial alterations — changing irrelevant details, swapping object identities, or rephrasing the question — and found that LLMs which previously passed now fail catastrophically. The fragility of the result suggests LLMs may be exploiting surface features of the task rather than reasoning about beliefs. Ullman argues this is the signature of a system that has learned the *form* of theory-of-mind problems from training data rather than the underlying *content* of mental-state reasoning. The paper is the canonical rebuttal to Kosinski's "LLMs have ToM" conclusion and a microcosm of the broader debate about whether LLM behavior reflects genuine understanding or sophisticated pattern matching. Together with Kosinski (2024), it illustrates the empirical state of the LLM-as-cognition debate: behavioral evidence points both ways depending on how the tasks are constructed.
 
 This is a great microcosm of the LLM-as-cognition debate. Both citations true.
 
@@ -78,6 +83,8 @@ This is a real new methodology in cognitive science.
 LLMs are pre-trained on text. Words refer to things in a world LLMs do not directly inhabit. Whether this matters is contested:
 
 - **Grounding required** ([Bender & Koller, 2020 — Climbing towards NLU](https://aclanthology.org/2020.acl-main.463/)): meaning requires connection to non-linguistic referents. LLMs miss this constitutively.
+
+  > Bender and Koller argue that systems trained only on textual form cannot in principle learn meaning, because meaning requires reference to entities and states in a non-linguistic world. They use the famous "octopus thought experiment" — an octopus listening to two humans communicate by undersea cable could mimic the linguistic exchanges without ever understanding what is being discussed. The authors warn that the field's tendency to call statistical text models "natural language understanding" conflates form with meaning and risks mistaking pattern matching for genuine comprehension. They argue grounded multimodal training, embodiment, or referential supervision are needed before any model can be said to understand. The paper became the canonical reference for the "LLMs cannot understand" position and remains an essential counterweight to optimistic readings of LLM capabilities.
 - **Grounding emergent** ([Pavlick, 2023](https://royalsocietypublishing.org/doi/10.1098/rsta.2022.0041)): textual structure carries enough about the world that meaning can be partially reconstructed.
 - **Grounding via multimodality** — most frontier models now train on text + image + audio + sometimes action. Whether this is enough is empirical.
 

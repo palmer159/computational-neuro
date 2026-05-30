@@ -40,9 +40,13 @@ This is consequential: the same neural machinery for remembering and for imagini
 
 📄 [Ha & Schmidhuber, 2018 — World Models](https://arxiv.org/abs/1803.10122) and [their NeurIPS version](https://worldmodels.github.io/). Latent world model + dreamed-up policy training. Brought neuroscience-flavored world-model thinking back to deep learning.
 
+> Ha and Schmidhuber demonstrated that an agent can learn to play a game entirely "in its dreams" — by training a policy on rollouts of a learned latent world model rather than on real environment interactions. Their architecture has three pieces: a vision module that compresses observations to a latent code, a memory RNN that predicts the next latent state, and a small linear controller trained inside the dreamed environment. The policy learned in dream space transfers back to the real environment with no further training, demonstrating that imagination-based learning can produce competent behavior. The paper revived neuroscience-flavored thinking about world models in deep learning and inspired the Dreamer family of model-based RL agents that followed. It is the modern reference point for "training in imagination," directly linked to hippocampus-as-generative-model proposals in cognitive neuroscience.
+
 📄 [Hafner et al., DreamerV3, 2023](https://arxiv.org/abs/2301.04104). Model-based deep [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) via latent world models. Strong on diverse benchmarks.
 
 📄 [Schrittwieser et al., MuZero, 2020 — Mastering Atari, Go, Chess and Shogi by planning with a learned model](https://arxiv.org/abs/1911.08265). Plan with a learned latent model. Closer to brain-style model-based RL than AlphaGo.
+
+> Schrittwieser and colleagues at DeepMind built MuZero, an agent that masters Atari, Go, Chess, and Shogi without ever being given the rules of the game. MuZero learns its own latent dynamics model jointly with policy and value functions, and uses Monte Carlo tree search inside this learned latent space to plan many steps ahead. The architecture is closer in spirit to brain-style model-based reinforcement learning than its predecessor AlphaZero, which required hand-coded environment dynamics. MuZero matched or exceeded AlphaZero's performance on board games while also beating prior state-of-the-art on Atari, demonstrating that learned latent world models can support effective deliberative planning. The result is a key milestone in the convergence between AI planning and the brain's hippocampus + dmPFC system that supports model-based decision-making in animals.
 
 📄 [LeCun, 2022 — A path towards autonomous machine intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf). Argues the missing piece for [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) is hierarchical predictive world models, with planning at multiple time scales. Brains are the existence proof.
 
@@ -64,6 +68,8 @@ The brain seamlessly arbitrates. AlphaZero/MuZero arbitrate explicitly via train
 ## Causal models: a known gap
 
 Brains seem to extract causal structure from limited data; modern AI mostly does not. Causality remains an open problem with strong neuro-inspired hypotheses about interventional, counterfactual cognition. See [Lake et al., 2017 — Building machines that learn and think like people](https://arxiv.org/abs/1604.00289). A great single read.
+
+> Lake, Ullman, Tenenbaum, and Gershman argue that human cognition differs from deep-learning systems in three ways that matter for general intelligence: humans build rich causal-generative models of the world (intuitive physics and psychology), they learn new concepts from very few examples by composing parts and relations, and they reason explicitly about interventions and counterfactuals. They contrast humans, who can recognize a new character from a single example by inferring its compositional structure, with neural networks that need millions of examples and still fail to generalize systematically. The paper makes the strong claim that scaling alone will not close these gaps and that progress requires building systems with structured priors and causal world models. They lay out a research agenda combining probabilistic programs, program induction, and structured reasoning. The piece is the cognitive-science manifesto for the AGI debate and remains the cleanest single statement of what symbolic, structured, and causal reasoning would add to current AI.
 
 ## What "world models" really need to add to LLMs
 

@@ -42,6 +42,8 @@ This stereotyped 6-layer microcircuit appears (with variations) across all neoco
 
 📄 [Mountcastle, 1997 — The columnar organization of the neocortex](https://doi.org/10.1093/brain/120.4.701) — the founding paper of canonical-cortex theory.
 
+> Mountcastle synthesizes decades of his and others' work to argue that the neocortex is organized into vertical columns of ~80–100 neurons spanning all six layers, with each column functioning as a discrete computational unit. He proposes that despite enormous functional differences between sensory, motor, and association areas, the underlying microcircuit within each column is essentially the same — a "canonical algorithm" that the cortex executes everywhere with local variations. The paper marshals evidence from somatosensory, visual, and prefrontal cortex showing stereotyped layer-specific connectivity, similar interneuron populations, and consistent input-output structure. Mountcastle's vision became the unifying hypothesis driving much of modern systems neuroscience and the modeling target of many NeuroAI proposals. The "one cortical algorithm" bet underlies thousand-brains theory, predictive-coding microcircuit models, and the ambition to identify a single learning rule that explains all cortex.
+
 ## The subcortical players you must know
 
 | Structure | Function | AI mapping |
@@ -67,6 +69,8 @@ Five small nuclei in the brainstem and basal forebrain project broadly to the re
 | Histaminergic | Tuberomammillary | Histamine | Wakefulness |
 
 **🤖 AI-relevance.** Read [Doya, 2002 — Metalearning and neuromodulation](https://doi.org/10.1016/S0893-6080(02)00044-8). Maps the four big neuromodulators to RL meta-parameters: dopamine ≈ TD error, serotonin ≈ discount γ, noradrenaline ≈ inverse temperature β, acetylcholine ≈ learning rate α. This is one of the cleanest neuro→AI mappings in the field.
+
+> Doya proposes that the brain's four major neuromodulatory systems each implement a distinct hyperparameter of reinforcement learning, providing biological grounding for what RL theorists had treated as engineering knobs. Dopamine encodes the temporal-difference reward-prediction error that drives policy and value updates. Serotonin tunes the discount factor γ, balancing short-term against long-term reward — animals with higher serotonin show greater patience for delayed rewards. Noradrenaline controls the inverse temperature β of action selection, biasing the policy between exploration and exploitation. Acetylcholine modulates the learning rate α, gating how strongly current experience updates synapses. The framework gives a concrete, testable mapping between neuromodulator levels and RL meta-parameters, and it is one of the cleanest neuro→AI translations in the literature, directly informing meta-RL and adaptive optimization research.
 
 ## The two big learning systems hypothesis
 

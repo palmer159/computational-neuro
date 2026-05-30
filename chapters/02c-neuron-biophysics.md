@@ -30,6 +30,8 @@ $$
 
 You will rarely simulate this in AI work, but you should recognize it. [Original paper (1952)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/).
 
+> Hodgkin and Huxley used voltage-clamp experiments on the squid giant axon to isolate and quantify the ionic currents underlying the action potential. They identified a transient sodium current and a delayed potassium current, and inferred the existence of voltage-gated channels with characteristic activation and inactivation kinetics. From this they derived a system of four coupled differential equations — one for membrane voltage and three for channel gating variables — that quantitatively reproduces the spike's shape, threshold, and refractoriness. The model is the founding document of computational neuroscience and earned them the 1963 Nobel Prize. Even though modern AI models compress all this into a memoryless ReLU, the Hodgkin-Huxley framework remains the reference description against which any biophysically-detailed neuron model is compared.
+
 **🤖 AI-relevance.** Modern deep learning ignores almost all of this. ReLU is a memoryless instantaneous nonlinearity; a real neuron is a **dynamical system with memory and refractory dynamics**. Spiking neural networks (Ch 24) try to recover this.
 
 ## Simpler models you'll actually see

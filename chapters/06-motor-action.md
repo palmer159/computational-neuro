@@ -45,6 +45,8 @@ Key reading: [Doya, 2000 — Complementary roles of basal ganglia and cerebellum
 
 📄 [Wolpert, Ghahramani & Jordan, 1995 — An internal model for sensorimotor integration](https://doi.org/10.1126/science.7569931). Foundational.
 
+> Wolpert, Ghahramani, and Jordan provided the first quantitative behavioral evidence that the brain maintains internal forward models of the body. They asked subjects to estimate the position of their unseen hand after movements and showed that estimates systematically deviated from both pure visual feedback and pure proprioception in a way only an optimal Kalman-filter-like integrator could explain. The brain integrates a forward model's prediction of the hand's location with sensory feedback weighted by their respective noise levels, exactly as Bayesian estimation would prescribe. This established the cerebellum and motor cortex as substrates for predictive control rather than purely reactive processing. The paper became the foundational reference for internal-model theories of motor control and inspired modern model-based reinforcement learning approaches that learn forward dynamics models for action selection.
+
 **🤖 AI-relevance.** Model-based RL, Dreamer, Muzero, world-models — these are inverse and forward models. The brain version emphasizes (a) very fast learning, (b) tight coupling to control, (c) modularity per body part.
 
 ## Sources

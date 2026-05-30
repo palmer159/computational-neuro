@@ -34,6 +34,8 @@ Repeated across **square millimeters** of cortex with local variations. The colu
 Several leading hypotheses, mostly compatible:
 
 1. **Predictive coding.** L2/3 carries predictions, L4/L5 errors. [Bastos et al., 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3526980/) — a full canonical-microcircuit proposal for predictive coding.
+
+   > Bastos and colleagues map the predictive-coding framework directly onto the canonical cortical microcircuit, assigning specific computational roles to layers and cell types. They propose that superficial pyramidal neurons (layers 2/3) compute prediction errors that propagate up the hierarchy via feedforward gamma-band oscillations, while deep pyramidal neurons (layers 5/6) carry top-down predictions that descend the hierarchy via slower beta-band oscillations. Different inhibitory interneuron classes gate these signals differently — PV+ cells controlling fast excitatory gain, SOM+ cells regulating dendritic integration of feedback. The model unifies anatomical layer-specific connectivity, oscillatory frequency bands, and predictive-coding theory into a single computationally specific proposal. It is the most-cited canonical-microcircuit instantiation of predictive coding and a target framework for biologically plausible learning rules that aim to scale beyond toy networks.
 2. **Hierarchical Bayesian inference.** Each column infers the local posterior; feedback carries the prior. [Lee & Mumford, 2003](https://doi.org/10.1364/JOSAA.20.001434).
 3. **Sparse distributed coding** with competitive lateral inhibition. [Olshausen-style models](https://www.rctn.org/bruno/papers/sparse-coding.pdf).
 4. **Cortical "Hebbian assemblies"** — Hebb's cell assemblies as the unit. Related to Hopfield-style attractors. [Buzsáki, 2010](https://doi.org/10.1016/j.neuron.2010.09.023).
@@ -65,6 +67,8 @@ The PV–SOM–VIP triad is the canonical "context-dependent computation" circui
 ## Cortical hierarchies and the Felleman-Van Essen diagram
 
 📄 [Felleman & Van Essen, 1991 — Distributed hierarchical processing in the primate cerebral cortex](https://doi.org/10.1093/cercor/1.1.1). The famous spaghetti diagram of macaque visual cortex with ~30 areas in a partial hierarchy. Sets the data many cortical models try to match.
+
+> Felleman and Van Essen aggregated tracer-injection data from hundreds of studies to produce a connectivity map of macaque visual cortex showing roughly 30 distinct areas linked by hundreds of feedforward and feedback projections. They classified each connection by its laminar origin and termination pattern, distinguishing feedforward from feedback streams, and arranged the resulting graph into a partial hierarchy with V1 at the bottom and prefrontal areas at the top. The result — the famous "spaghetti diagram" — revealed that the visual system is not a clean feedforward pipeline but a massively recurrent network with feedback projections at every level. The paper gave the field its empirical hierarchy and remains the dataset that hierarchical cortical models — including modern brain-prediction CNNs — try to match. It is the canonical demonstration that recurrence and feedback are pervasive in cortex, motivating modern AI work that adds recurrence to feedforward architectures.
 
 ## Sources
 

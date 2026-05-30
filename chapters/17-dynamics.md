@@ -14,6 +14,8 @@ A trained recurrent network's hidden state often settles into stereotyped trajec
 
 📄 [Khona & Fiete, 2022 — Attractor and integrator networks in the brain](https://arxiv.org/abs/2112.03978). The modern review.
 
+> Khona and Fiete review attractor networks across the brain, taxonomizing them by their geometry — point attractors for discrete decisions, ring attractors for continuous variables like head direction, line and plane attractors for working memory, and high-dimensional manifold attractors for spatial coding. They synthesize evidence that these dynamical structures are pervasive in the brain and provide a robust substrate for memory, navigation, and decision-making. The review connects classical Hopfield-style theory to modern recordings, showing how trained recurrent networks recover similar dynamics from task pressure alone. They argue attractor dynamics are a general computational primitive that the brain reuses across systems, with parallels in modern AI like content-addressable memory and stable representations in trained RNNs. The paper is the standard contemporary reference on attractor dynamics in neuroscience and bridges to AI through both Hopfield-style energy models and RNN dynamics analysis.
+
 ### Hopfield networks
 
 📄 [Hopfield, 1982 — Neural networks and physical systems with emergent collective computational abilities](https://www.pnas.org/doi/10.1073/pnas.79.8.2554). A symmetric recurrent network with binary or rate units that stores patterns as fixed points. Energy-based, content-addressable.
@@ -22,11 +24,15 @@ A trained recurrent network's hidden state often settles into stereotyped trajec
 
 📄 [Ramsauer et al., 2020 — Hopfield Networks is All You Need](https://arxiv.org/abs/2008.02217). Showed that softmax attention is mathematically equivalent to a continuous (modern) Hopfield network. Hugely consequential — a 1982 neural-net idea is one mathematical reframing of the transformer's core operation.
 
+> Ramsauer and colleagues prove that softmax attention — the central operation of the transformer — is mathematically equivalent to a single update step of a continuous-state ("modern") Hopfield network. They generalize the classical binary Hopfield model to continuous patterns and show this generalization has exponentially larger storage capacity, making it a viable content-addressable memory at the scale of modern AI systems. The equivalence reframes attention as content-addressable associative retrieval: queries fetch values weighted by similarity to keys, exactly as a Hopfield network completes patterns from partial cues. This retroactively grounds one of the most important architectural innovations in modern AI in 1980s biological neural-network theory and provides a clean energy-based reading of what attention does. It also opens design space for "Hopfield layers" as drop-in associative memory modules and gives transformers a biologically plausible interpretation as iterative attractor dynamics rather than opaque parallel attention.
+
 **🤖 AI-relevance.** This is a strong rebuttal to "transformers are non-biological." The attention operation has a clean energy-based, attractor-network reading. Whether the brain uses it that way is open; the math doesn't care.
 
 ### Decision-making as a 2-attractor network
 
 📄 [Wang, 2002 — Probabilistic decision making by slow reverberation in cortical circuits](https://doi.org/10.1016/S0896-6273(02)01092-9). A 2-attractor network with [NMDA](https://en.wikipedia.org/wiki/NMDA_receptor)-driven slow reverberation reproduces psychophysical data on perceptual decision-making (and the famous LIP neuron ramp-up data of Shadlen and Newsome).
+
+> Wang built a recurrent cortical network with two competing populations connected by lateral inhibition and stabilized by slow NMDA-dependent reverberation. The network's dynamics implement a noisy attractor competition that integrates ambiguous sensory evidence over hundreds of milliseconds before committing to one of two choices. The model quantitatively reproduced classic LIP-neuron ramp-up data from Shadlen and Newsome's monkey experiments, including the dependence of decision time on stimulus difficulty and the trial-by-trial variability of choice. NMDA's slow time constants turned out to be essential: faster excitation produces premature decisions, while NMDA matches the observed integration timescales. The paper is the canonical computational model of perceptual decision-making and links psychophysics, single-neuron physiology, and recurrent network theory in a single concrete circuit, providing the cleanest worked example of attractor dynamics implementing cognition.
 
 ## Oscillations: the brain's rhythms
 

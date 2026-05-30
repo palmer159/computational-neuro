@@ -37,6 +37,8 @@ When to use:
 ## What you lose by going to spikes
 
 - Differentiability. Surrogate-gradient methods help ([Neftci, Mostafa & Zenke, 2019](https://arxiv.org/abs/1901.09948)) but you're still off the GPU happy path.
+
+  > Neftci, Mostafa, and Zenke review surrogate-gradient methods, the now-standard technique for training spiking neural networks (SNNs) with backpropagation despite the non-differentiability of the spike function. The core idea is to replace the discontinuous Heaviside step function used in the forward pass with a smooth surrogate (e.g., a fast sigmoid derivative) only during the backward pass, allowing gradient flow without changing the network's spiking behavior. They show this approach delivers competitive accuracy on standard benchmarks while preserving the energy and timing benefits of spike-based computation. The framework reconciles biological plausibility (event-driven sparse activations, temporal coding) with the practical training pipeline of modern deep learning. It is the standard reference for SNN training and underlies most current neuromorphic-hardware deployment, including work on Intel Loihi and SpiNNaker.
 - Tractability. 100k spiking neurons is hard; 100M rate units is a Tuesday.
 
 ## Population dynamics: a rate-model triumph
